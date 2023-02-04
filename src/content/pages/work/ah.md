@@ -16,7 +16,7 @@ rollupCardOverlayBackgroundColor: "#148948"
 rollupCardDescription: A hearing solutions company. Hear better. Live better.
 
 ---
-<p>In 2022, Tway carried out a complete re-design and relaunch of Armstrong Hearing's company website. The focus was creating a modern brochure site to bolster marketing efforts during a time of opportunity in the local hearing-aid market.
+<p>In 2022, Corey Keller carried out a complete re-design and relaunch of Armstrong Hearing's company website. The focus was creating a modern brochure site to bolster marketing efforts during a time of opportunity in the local hearing-aid market.
 </p>
 
 <p>

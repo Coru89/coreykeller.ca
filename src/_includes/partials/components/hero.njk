@@ -15,7 +15,7 @@
 					<h1 class="hero__heading">{{ props.heroHeading4 | safe }}</h1>
 				{% endif %}
 			</div>
-			{% if props.heroServices %}
+			{# {% if props.heroServices %}
 				<span class="hero__services-label">Competencies:</span>
 				<div class="hero__services">
 					{% for service in props.heroServices %}
@@ -24,17 +24,22 @@
 					{{ arrow_link('See the full list', '/services') }}
 				</div>
 				<div class="hero__help">
-			{% endif %}
+			{% endif %} #}
 				<div class="hero__help-text">
 					Need help on your next web project?
 				</div>
 				{{ button_link_inverse("Let's Chat", '/contact', true) }}
 			</div>
 		</div>
-		<div class="hero__image-wrapper">
+
+		<svg width="1680" height="94" viewBox="0 0 1680 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M1680 94L-45 0L1680 2.98413V94Z" fill="#569A9F"/>
+		</svg>
+
+		{# <div class="hero__image-wrapper">
 			{% if props.heroImage %}
 				{% image props.heroImage, 'Stargazing', 'hero__image', "eager", "(min-width: 36rem) 100vw, 50vw", ['400', '450', '500', '600'] %}
 			{% endif %}
-		</div>
+		</div> #}
 	</div>
 </header>

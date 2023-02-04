@@ -1,8 +1,8 @@
 .hero {
   background-color: var(--color-primary);
-  border-radius: 0 0 75px;
-  margin: 0 auto;
-  max-width: 1600px;
+  //border-radius: 0 0 75px;
+  //margin: 0 auto;
+  //max-width: 1600px;
   color: var(--color-hero-heading);
 
   @include media-query(xxl) {

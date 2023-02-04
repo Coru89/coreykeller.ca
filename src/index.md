@@ -1,16 +1,16 @@
 ---
 layout: home
-title: Websites to power small business
+title: Corey Keller - Frontend Developer
 postsHeading: Insights
 archiveButtonText: See all insights
 portfolioHeading: Recent Work
 servicesHeading: Expertise
-metaDesc: Tway is a web development agency that builds modern and fast websites.
+metaDesc: Corey Keller - Frontend Developer
 socialImage: ''
-heroHeading: 'A Web Development, E-commerce '
-heroHeading2: "& Intranet Agency. "
-heroHeading3: 'Looking for a blazing-fast website, e-commerce or Intranet solution? '
-heroHeading4: Look no further.
+heroHeading: 
+heroHeading2: "I'm Corey!"
+heroHeading3: "A "
+heroHeading4: "Front-end Developer."
 heroImage: "/images/night-sky-fancy.png"
 page_sections:
 - template: portfolio-featured-panel

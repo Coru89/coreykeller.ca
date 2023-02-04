@@ -16,7 +16,7 @@ socialImage: ''
 page_sections:
 - template: cards-with-icon
   backgroundColor: grey
-  heading: Why Tway?
+  heading: Why Corey Keller?
   cards:
   - title: "Pride in performance \U0001F680"
     summary: Our web solutions are optimized to provide excellent speed. For our devs,
@@ -42,8 +42,8 @@ page_sections:
     linkPath: ''
     icon: ''
   - title: "An exceptional UX deisgn is not a nice-to-have \U0001F4F2"
-    summary: Tway beleives users should not have to think. Provinding an intutive
-      and delightful navigation expereince is everything. All tway solutions are designed
+    summary: Corey Keller beleives users should not have to think. Provinding an intutive
+      and delightful navigation expereince is everything. All Corey Keller solutions are designed
       to be responsive so that they provide an excellect expereince regardless of
       device or screen size.
     linkPath: ''

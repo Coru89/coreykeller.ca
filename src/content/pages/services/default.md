@@ -40,7 +40,7 @@ page_sections:
   summary: |-
     Go-Live doesn’t have to be the end of our relationship. We can work with you to implement and review Google Analytics, Google Ads (Search Engine Ads) and help with other changes or omptimizations.
 
-    Tway also has expereince with Google ADs campaigns. Google Ads is a PPC (pay-per-click) service that can help your busniess convert, weather that means generate leads or sales conversions.
+    Corey Keller also has expereince with Google ADs campaigns. Google Ads is a PPC (pay-per-click) service that can help your busniess convert, weather that means generate leads or sales conversions.
   imageURL: images/placeholder-image.jpg
   imagePosition: left
   imageAlt: placeholder
