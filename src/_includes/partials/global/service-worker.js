@@ -15,7 +15,7 @@ const EXCLUDED_URLS = [
 
 // URLS that we want to be cached when the worker is installed
 const PRE_CACHE_URLS = [
-  '/fonts/Oxygen-Regular.woff2', '/fonts/Heebo-Regular.woff2', '/fonts/Heebo-Medium.woff2', '/fonts/Heebo-light.woff2', '/fonts/Heebo-Bold.woff2', '/fonts/Oxygen-Light.woff2', '/fonts/Oxygen-Bold.woff2'
+  '/fonts/Merriweather-Regular.woff2', '/fonts/Bitter-Regular.woff2', '/fonts/Bitter-Medium.woff2', '/fonts/Bitter-light.woff2', '/fonts/Bitter-Bold.woff2', '/fonts/Merriweather-Light.woff2', '/fonts/Merriweather-Bold.woff2','/fonts/Quicksand-Regular.woff2', '/fonts/Quicksand-Medium.woff2', '/fonts/Quicksand-light.woff2', '/fonts/Quicksand-Bold.woff2',
 ];
 
 // You might want to bypass a certain host

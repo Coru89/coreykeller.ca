@@ -1,76 +1,121 @@
  @font-face {
-   font-family: 'Heebo';
+   font-family: 'Bitter';
    font-style: normal;
    font-weight: 400;
-   src: local('Heebo'),
-     url('/fonts/Heebo-Regular.woff2') format('woff2');
+   src: local('Bitter'),
+     url('/fonts/Bitter-Regular.woff2') format('woff2');
    font-display: swap;
  }
 
  @font-face {
-  font-family: 'Heebo';
+  font-family: 'Bitter';
   font-style: normal;
   font-weight: 300;
-  src: local('Heebo Light'),
-    url('/fonts/Heebo-Light.woff2') format('woff2');
+  src: local('Bitter Light'),
+    url('/fonts/Bitter-Light.woff2') format('woff2');
   font-display: swap;
 }
 
  @font-face {
-   font-family: 'Heebo';
+   font-family: 'Bitter';
    font-style: normal;
    font-weight: 500;
 
-   src: local('Heebo Medium'), local('Heebo-Medium'),
-     url('/fonts/Heebo-Medium.woff2') format('woff2');
+   src: local('Bitter Medium'), local('Bitter-Medium'),
+     url('/fonts/Bitter-Medium.woff2') format('woff2');
    font-display: swap;
  }
 
  @font-face {
-   font-family: 'Heebo';
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Bitter SemiBold'), local('Bitter-SemiBold'),
+    url('/fonts/Bitter-Bold.woff2') format('woff2');
+ font-display: swap;
+}
+
+ @font-face {
+   font-family: 'Bitter';
    font-style: normal;
    font-weight: 700;
-   font-weight: 700;
-   src: local('Heebo Bold'), local('Heebo-Bold'),
-     url('/fonts/Heebo-Bold.woff2') format('woff2');
+   src: local('Bitter Bold'), local('Bitter-Bold'),
+     url('/fonts/Bitter-Bold.woff2') format('woff2');
   font-display: swap;
  }
 
+
  @font-face {
-   font-family: 'Oxygen';
+   font-family: 'Merriweather';
    font-style: normal;
    font-weight: 400;
-   src: local('Oxygen'), local('Oxygen Regular'), local('Oxygen-Regular'),
-     url('/fonts/Oxygen-Regular.woff2') format('woff2');
+   src: local('Merriweather'), local('Merriweather Regular'), local('Merriweather-Regular'),
+     url('/fonts/Merriweather-Regular.woff2') format('woff2');
    font-display: swap;
  }
 
  @font-face {
-   font-family: 'Oxygen';
+   font-family: 'Merriweather';
    font-style: normal;
    font-weight: 300;
-   src: local('Oxygen Light'), local('Oxygen-Light'),
-     url('/fonts/Oxygen-Light.woff2') format('woff2');
+   src: local('Merriweather Light'), local('Merriweather-Light'),
+     url('/fonts/Merriweather-Light.woff2') format('woff2');
    font-display: swap;
  }
 
  @font-face {
-   font-family: 'Oxygen';
+   font-family: 'Merriweather';
    font-style: normal;
    font-weight: 700;
-   src: local('Oxygen Bold'), local('Oxygen-Bold'),
-     url('/fonts/Oxygen-Bold.woff2') format('woff2');
+   src: local('Merriweather Bold'), local('Merriweather-Bold'),
+     url('/fonts/Merriweather-Bold.woff2') format('woff2');
    font-display: swap;
  }
 
+ @font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand'), local('Quicksand Regular'), local('Quicksand-Regular'),
+    url('/fonts/Quicksand-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Quicksand Light'), local('Quicksand-Light'),
+    url('/fonts/Quicksand-Light.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Quicksand Medium'), local('Quicksand-Medium'),
+    url('/fonts/Quicksand-Medium.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Quicksand Bold'), local('Quicksand-Bold'),
+    url('/fonts/Quicksand-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
 body {
-  font-family: get-font(serif);
+  font-family: get-font(base);
 }
  
  h1,
  h2,
  h3 {
-  font-family: get-font(base);
+  font-family: get-font(serif);
 }
 
 h1 {

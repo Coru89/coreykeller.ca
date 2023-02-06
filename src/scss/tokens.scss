@@ -28,19 +28,25 @@ $tokens: (
     xxxl: 120rem
   ),
   colors: (
-    primary: #426B69,
-    pink: #AA6373,
-    orange: #EE964B,
-    green: #B9D8C2,
-    blue: #A8D5E2,
-    black: #231F20,
-    slate: #261C15,
+    teal: #569A9F,
+    pink: #ECD8D5,
+    pink-light: #FFF6F4,
+    red: #9A5247,
+    green-light: #B9D8C2,
+    green-lighter: #B4CECF,
+    green: #386367,
+    blue: #4D7198,
+    blue-dark: #092D51,
+    beige: #FFF9EF,
+    sand: #FEF2D7,
+    black: #222222,
     grey: #CDCDCD,
     grey-light: #F5F5F5,
     white: #FFF
   ),
   fonts: (
-    base: "'Heebo', sans-serif",
-    serif: "'Oxygen', sans-serif"
+    base: "'Quicksand', sans-serif",
+    serif: "'Bitter', serif",
+    serif-alt: "'Merriweather', serif"
   )
 );

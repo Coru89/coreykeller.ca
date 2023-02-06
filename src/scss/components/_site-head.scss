@@ -1,12 +1,6 @@
 .site-head {
   padding: get-size(base) 0;
-
-  &--isHome {
-    background-color: var(--color-primary);
-    margin: 0 auto;
-    max-width: 1600px;
-    width: 100%;
-  }
+  background-color: var(--color-green-lighter);
 
   &__wrapper {
     @include panel-container;
@@ -32,20 +26,20 @@
     }
   }
 
-  .site__logo {
-    height: 52px;
-    margin-left: -.5rem;
-    max-width: 105px;
-    width: 105px;
+  // .site__logo {
+  //   height: 52px;
+  //   margin-left: -.5rem;
+  //   max-width: 105px;
+  //   width: 105px;
 
-    @include media-query(md) {
-      display: block;
-    }
+  //   @include media-query(md) {
+  //     display: block;
+  //   }
 
-    &--dark {
-      display: none;
-    }
-  }
+  //   &--dark {
+  //     display: none;
+  //   }
+  // }
 }
 
 // @include dark-mode {

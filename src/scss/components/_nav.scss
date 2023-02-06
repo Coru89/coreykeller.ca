@@ -44,12 +44,12 @@
       }
     }
 
-    &--isHome {
-      svg {
-        fill: #fff;
-        stroke: #fff;
-      }
-    }
+    // &--isHome {
+    //   svg {
+    //     fill: #fff;
+    //     stroke: #fff;
+    //   }
+    // }
   }
 
   &__wrapper {
@@ -67,7 +67,7 @@
       display: flex;
       padding: 0;
       position: static;
-      justify-content: space-between;
+      justify-content: flex-end;
     }
   }
 
@@ -188,11 +188,11 @@
       position: relative;
       text-decoration: none;
 
-      &--isHome {
-        @include media-query(md) {
-          color: var(--color-white);
-        }
-      }
+      // &--isHome {
+      //   @include media-query(md) {
+      //     color: var(--color-white);
+      //   }
+      // }
 
       @include media-query(md) {
         display: inline-block;

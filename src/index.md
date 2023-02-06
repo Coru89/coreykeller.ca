@@ -7,7 +7,7 @@ portfolioHeading: Recent Work
 servicesHeading: Expertise
 metaDesc: Corey Keller - Frontend Developer
 socialImage: ''
-heroHeading: 
+heroHeading: 'Hey there, bud.'
 heroHeading2: "I'm Corey!"
 heroHeading3: "A "
 heroHeading4: "Front-end Developer."
