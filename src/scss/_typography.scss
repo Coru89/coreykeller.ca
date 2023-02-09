@@ -1,76 +1,291 @@
- @font-face {
-   font-family: 'Bitter';
-   font-style: normal;
-   font-weight: 400;
-   src: local('Bitter'),
-     url('/fonts/Bitter-Regular.woff2') format('woff2');
-   font-display: swap;
- }
-
- @font-face {
+@font-face {
   font-family: 'Bitter';
+  src: local('Bitter ExtraBold Italic'), local('Bitter-ExtraBoldItalic'),
+      url('fonts/Bitter-ExtraBoldItalic.woff2') format('woff2'),
+      url('fonts/Bitter-ExtraBoldItalic.woff') format('woff'),
+      url('fonts/Bitter-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bitter';
+  src: local('Bitter ExtraLight'), local('Bitter-ExtraLight'),
+      url('fonts/Bitter-ExtraLight.woff2') format('woff2'),
+      url('fonts/Bitter-ExtraLight.woff') format('woff'),
+      url('fonts/Bitter-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bitter';
+  src: local('Bitter Bold Italic'), local('Bitter-BoldItalic'),
+      url('fonts/Bitter-BoldItalic.woff2') format('woff2'),
+      url('fonts/Bitter-BoldItalic.woff') format('woff'),
+      url('fonts/Bitter-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: 'Bitter';
+//   src: local('Bitter ExtraLight Italic'), local('Bitter-ExtraLightItalic'),
+//       url('fonts/Bitter-ExtraLightItalic.woff2') format('woff2'),
+//       url('fonts/Bitter-ExtraLightItalic.woff') format('woff'),
+//       url('fonts/Bitter-ExtraLightItalic.ttf') format('truetype');
+//   font-weight: 200;
+//   font-style: italic;
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: 'Bitter';
+  src: local('Bitter Bold'), local('Bitter-Bold'),
+      url('fonts/Bitter-Bold.woff2') format('woff2'),
+      url('fonts/Bitter-Bold.woff') format('woff'),
+      url('fonts/Bitter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bitter';
+  src: local('Bitter Black'), local('Bitter-Black'),
+      url('fonts/Bitter-Black.woff2') format('woff2'),
+      url('fonts/Bitter-Black.woff') format('woff'),
+      url('fonts/Bitter-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: 'Bitter';
+//   src: local('Bitter Black Italic'), local('Bitter-BlackItalic'),
+//       url('fonts/Bitter-BlackItalic.woff2') format('woff2'),
+//       url('fonts/Bitter-BlackItalic.woff') format('woff'),
+//       url('fonts/Bitter-BlackItalic.ttf') format('truetype');
+//   font-weight: 900;
+//   font-style: italic;
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: 'Bitter';
+  src: local('Bitter ExtraBold'), local('Bitter-ExtraBold'),
+      url('fonts/Bitter-ExtraBold.woff2') format('woff2'),
+      url('fonts/Bitter-ExtraBold.woff') format('woff'),
+      url('fonts/Bitter-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bitter';
+  src: local('Bitter Light'), local('Bitter-Light'),
+      url('fonts/Bitter-Light.woff2') format('woff2'),
+      url('fonts/Bitter-Light.woff') format('woff'),
+      url('fonts/Bitter-Light.ttf') format('truetype');
   font-weight: 300;
-  src: local('Bitter Light'),
-    url('/fonts/Bitter-Light.woff2') format('woff2');
-  font-display: swap;
-}
-
- @font-face {
-   font-family: 'Bitter';
-   font-style: normal;
-   font-weight: 500;
-
-   src: local('Bitter Medium'), local('Bitter-Medium'),
-     url('/fonts/Bitter-Medium.woff2') format('woff2');
-   font-display: swap;
- }
-
- @font-face {
-  font-family: 'Bitter';
   font-style: normal;
-  font-weight: 600;
-  src: local('Bitter SemiBold'), local('Bitter-SemiBold'),
-    url('/fonts/Bitter-Bold.woff2') format('woff2');
- font-display: swap;
+  font-display: swap;
 }
 
- @font-face {
+// @font-face {
+//   font-family: 'Bitter';
+//   src: local('Bitter Light Italic'), local('Bitter-LightItalic'),
+//       url('fonts/Bitter-LightItalic.woff2') format('woff2'),
+//       url('fonts/Bitter-LightItalic.woff') format('woff'),
+//       url('fonts/Bitter-LightItalic.ttf') format('truetype');
+//   font-weight: 300;
+//   font-style: italic;
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: 'Bitter';
+  src: local('Bitter Medium'), local('Bitter-Medium'),
+      url('fonts/Bitter-Medium.woff2') format('woff2'),
+      url('fonts/Bitter-Medium.woff') format('woff'),
+      url('fonts/Bitter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bitter';
+  src: local('Bitter SemiBold'), local('Bitter-SemiBold'),
+      url('fonts/Bitter-SemiBold.woff2') format('woff2'),
+      url('fonts/Bitter-SemiBold.woff') format('woff'),
+      url('fonts/Bitter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
    font-family: 'Bitter';
-   font-style: normal;
-   font-weight: 700;
-   src: local('Bitter Bold'), local('Bitter-Bold'),
-     url('/fonts/Bitter-Bold.woff2') format('woff2');
+   src: local('Bitter Italic'), local('Bitter-Italic'),
+       url('fonts/Bitter-Italic.woff2') format('woff2'),
+      url('fonts/Bitter-Italic.woff') format('woff'),
+       url('fonts/Bitter-Italic.ttf') format('truetype');
+   font-weight: normal;
+   font-style: italic;
   font-display: swap;
  }
 
+@font-face {
+  font-family: 'Bitter';
+  src: local('Bitter Regular'), local('Bitter-Regular'),
+      url('fonts/Bitter-Regular.woff2') format('woff2'),
+      url('fonts/Bitter-Regular.woff') format('woff'),
+      url('fonts/Bitter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
- @font-face {
-   font-family: 'Merriweather';
-   font-style: normal;
-   font-weight: 400;
-   src: local('Merriweather'), local('Merriweather Regular'), local('Merriweather-Regular'),
-     url('/fonts/Merriweather-Regular.woff2') format('woff2');
-   font-display: swap;
- }
+// @font-face {
+//   font-family: 'Bitter';
+//   src: local('Bitter Medium Italic'), local('Bitter-MediumItalic'),
+//       url('fonts/Bitter-MediumItalic.woff2') format('woff2'),
+//       url('fonts/Bitter-MediumItalic.woff') format('woff'),
+//       url('fonts/Bitter-MediumItalic.ttf') format('truetype');
+//   font-weight: 500;
+//   font-style: italic;
+//   font-display: swap;
+// }
 
- @font-face {
-   font-family: 'Merriweather';
-   font-style: normal;
-   font-weight: 300;
-   src: local('Merriweather Light'), local('Merriweather-Light'),
-     url('/fonts/Merriweather-Light.woff2') format('woff2');
-   font-display: swap;
- }
+@font-face {
+  font-family: 'Bitter';
+  src: local('Bitter Thin'), local('Bitter-Thin'),
+      url('fonts/Bitter-Thin.woff2') format('woff2'),
+      url('fonts/Bitter-Thin.woff') format('woff'),
+      url('fonts/Bitter-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
 
- @font-face {
-   font-family: 'Merriweather';
-   font-style: normal;
-   font-weight: 700;
-   src: local('Merriweather Bold'), local('Merriweather-Bold'),
-     url('/fonts/Merriweather-Bold.woff2') format('woff2');
-   font-display: swap;
- }
+// @font-face {
+//   font-family: 'Bitter';
+//   src: local('Bitter Thin Italic'), local('Bitter-ThinItalic'),
+//       url('fonts/Bitter-ThinItalic.woff2') format('woff2'),
+//       url('fonts/Bitter-ThinItalic.woff') format('woff'),
+//       url('fonts/Bitter-ThinItalic.ttf') format('truetype');
+//   font-weight: 100;
+//   font-style: italic;
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: 'Bitter';
+  src: local('Bitter SemiBold Italic'), local('Bitter-SemiBoldItalic'),
+      url('fonts/Bitter-SemiBoldItalic.woff2') format('woff2'),
+      url('fonts/Bitter-SemiBoldItalic.woff') format('woff'),
+      url('fonts/Bitter-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather Bold'), local('Merriweather-Bold'),
+      url('fonts/Merriweather-Bold.woff2') format('woff2'),
+      url('fonts/Merriweather-Bold.woff') format('woff'),
+      url('fonts/Merriweather-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather Italic'), local('Merriweather-Italic'),
+      url('fonts/Merriweather-Italic.woff2') format('woff2'),
+      url('fonts/Merriweather-Italic.woff') format('woff'),
+      url('fonts/Merriweather-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather Light Italic'), local('Merriweather-LightItalic'),
+      url('fonts/Merriweather-LightItalic.woff2') format('woff2'),
+      url('fonts/Merriweather-LightItalic.woff') format('woff'),
+      url('fonts/Merriweather-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather Black'), local('Merriweather-Black'),
+      url('fonts/Merriweather-Black.woff2') format('woff2'),
+      url('fonts/Merriweather-Black.woff') format('woff'),
+      url('fonts/Merriweather-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather Light'), local('Merriweather-Light'),
+      url('fonts/Merriweather-Light.woff2') format('woff2'),
+      url('fonts/Merriweather-Light.woff') format('woff'),
+      url('fonts/Merriweather-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather Black Italic'), local('Merriweather-BlackItalic'),
+      url('fonts/Merriweather-BlackItalic.woff2') format('woff2'),
+      url('fonts/Merriweather-BlackItalic.woff') format('woff'),
+      url('fonts/Merriweather-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather Regular'), local('Merriweather-Regular'),
+      url('fonts/Merriweather-Regular.woff2') format('woff2'),
+      url('fonts/Merriweather-Regular.woff') format('woff'),
+      url('fonts/Merriweather-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather Bold Italic'), local('Merriweather-BoldItalic'),
+      url('fonts/Merriweather-BoldItalic.woff2') format('woff2'),
+      url('fonts/Merriweather-BoldItalic.woff') format('woff'),
+      url('fonts/Merriweather-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
 
  @font-face {
   font-family: 'Quicksand';
@@ -115,7 +330,7 @@ body {
  h1,
  h2,
  h3 {
-  font-family: get-font(serif);
+  font-family: get-font(serif-alt);
 }
 
 h1 {
