@@ -82,6 +82,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/admin/previews.js');
   eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
+  eleventyConfig.addPassthroughCopy('src/*.png');
+  eleventyConfig.addPassthroughCopy('src/site.webmanifest');
 
   const now = new Date();
 
