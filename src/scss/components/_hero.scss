@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--color-teal);
+  background-color: var(--color-green-teal);
   //border-radius: 0 0 75px;
   //margin: 0 auto;
   //max-width: 1600px;
@@ -18,7 +18,7 @@
     padding: 0;
     white-space: pre;
     overflow: hidden;
-    font-size: 68px;
+    font-size: 54px;
 
     // @include media-query(md) {
     //   display: block;
@@ -30,6 +30,19 @@
 
     &-wrapper {
       margin-bottom: 3rem
+    }
+
+    &-emphasis {
+      font-weight: 600;
+    }
+
+    &-row {
+      &:first-of-type {
+        .hero__heading {
+          font-weight: 400;
+          font-style: italic;
+        }
+      }
     }
   }
 
