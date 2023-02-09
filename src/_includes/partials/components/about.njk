@@ -1,0 +1,64 @@
+{% from "macros/macros.njk" import button_link %}
+
+{% if props.backgroundColor === 'white' %}
+  {% set colorHexPanel = 'var(--color-white)' %}
+    {% set colorHexCard = 'transparent' %}
+{% elseif props.backgroundColor === 'grey' %}
+    {% set colorHexPanel = 'var(--color-grey-light)' %}
+    {% set colorHexCard = 'transparent' %}
+{% elseif props.backgroundColor === 'green' %}
+  {% set colorHexPanel = 'var(--color-theme-primary)' %}
+  {% set colorHexCard = 'var(--color-white)' %}
+{% elseif props.backgroundColor === 'light green' %}
+  {% set colorHexPanel = 'var(--color-bg-light);' %}
+  {% set colorHexCard = 'transparent' %}
+{% else %}
+    {% set colorHexPanel = 'var(--color-white)' %}
+    {% set colorHexCard = 'transparent' %}
+{% endif %}
+
+
+
+
+<section class="about" style="background-color: {{colorHexPanel}};">
+  <div class="custom-shape-divider-top-1675939461">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      </svg>
+  </div>
+  <div class="about__inner" style="background-color: {{colorHexCard}};">
+      <div class="about__image{% if props.imagePosition === 'right' %} about__image--reverse{% endif %}">
+      {% if props.imageURL.length %}
+        {% image props.imageURL, props.imageAlt, null, "lazy", "100vw", ['300', '400', '576', '600', '730'] %}
+      {% endif %}
+    </div>
+    <div class="about__text{% if props.imagePosition === 'right' %} about__text--reverse{% endif %}">
+      <h2 class="about__text-title">{{ props.title }}</h2>
+      <div class="about__text-summary">{{props.summary | safe }}</div>
+        {% if props.buttonText.length and props.buttonPath.length %}
+          {{ button_link(props.buttonText, props.buttonPath, true) }} 
+        {% endif %}
+    </div>
+  </div>
+</section>
+
+<style>.custom-shape-divider-top-1675939461 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1675939461 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1675939461 .shape-fill {
+    fill: #569A9F;
+}</style>

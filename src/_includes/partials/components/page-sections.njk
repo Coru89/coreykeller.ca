@@ -12,6 +12,19 @@
             fullBleed: block.fullBleed
         }) }}
 
+    {% elseif block.template === 'about' %}
+        {{ component('about', {
+            title: block.title,
+            summary: block.summary,
+            buttonText: block.buttonText,
+            buttonPath: block.buttonPath,
+            imageURL: block.imageURL,
+            imageAlt: block.imageAlt,
+            imagePosition: block.imagePosition,
+            backgroundColor: block.backgroundColor,
+            fullBleed: block.fullBleed
+        }) }}
+
     {% elseif block.template === 'portfolio-featured-panel' %}
         {{ component('portfolio-featured-panel', {
             title: block.title,
