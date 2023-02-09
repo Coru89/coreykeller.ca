@@ -1,32 +1,18 @@
 .hero {
   background-color: var(--color-green-teal);
-  //border-radius: 0 0 75px;
-  //margin: 0 auto;
-  //max-width: 1600px;
   color: var(--color-hero-heading);
 
-  // @include media-query(xxl) {
-  //   height: calc(100vh - 5.125rem);
-  //   min-height: 800px;
-  // }
+
 
   &__heading {
     display: inline;
     font-family: get-font(serif);
+    font-size: 54px;
     font-weight: 400;
     line-height: 1.5;
+    overflow: hidden;
     padding: 0;
     white-space: pre;
-    overflow: hidden;
-    font-size: 54px;
-
-    // @include media-query(md) {
-    //   display: block;
-
-    //   &:last-of-type {
-    //     margin-bottom: 4rem
-    //   }
-    // }
 
     &-wrapper {
       margin-bottom: 3rem
@@ -57,103 +43,12 @@
 
     align-items: flex-start;
     display: flex;
+    padding: 3.5rem 1.25rem 0rem 1.25rem;
     position: relative;
-    padding: 3.5rem 1.25rem 5rem 1.25rem;
 
     @include media-query(md) {
-      padding: 6.5rem 2rem 7rem 2rem;
+      padding: 6.5rem 2rem 0rem 2rem;
     }
-  }
-
-  &__text-content {
-    @include media-query(lg) {
-      max-width: 70%;
-    }
-  }
-
-  &__services {
-    align-items: center;
-    display: inline-flex;
-    flex-wrap: wrap;
-    max-width: 550px;
-    padding-bottom: 2.5rem;
-
-    &-label {
-      font-size: get-font-size(500);
-      padding-bottom: 1rem;
-      display: block;
-
-      @include media-query(md) {
-        display: inline-block;
-        font-size: get-font-size(600);
-        padding-right: 1rem;
-      }
-    }
-
-    &-all {
-      color: var(--color-white);
-      margin-top: .5rem;
-      text-decoration: none;
-
-      svg {
-        margin-left: .25rem;
-        stroke: var(--color-white);
-      }
-    }
-
-    .button {
-      margin: 0 0.5rem 0.75rem 0;
-    }
-
-    .button__arrow-link {
-      &:hover {
-        color: var(--color-white);
-      }
-  
-      svg {
-        stroke: #fff;
-      }
-    }
-  }
-
-  &__help {
-    &-text {
-      font-size: get-font-size(500);
-      padding-bottom: 1rem;
-    }
-
-    @include media-query(md) {
-      align-items: center;
-      display: flex;
-
-      &-text {
-        display: inline-block;
-        font-size: get-font-size(600);
-        padding: 0 1rem 0 0;
-      }
-    }
-  }
-
-  &__image-wrapper {
-    display: none;
-
-    @include media-query(lg) {
-      display: block;
-      margin-left: 2rem;
-      width: 30%;
-    }
-
-    @include media-query(xxxl) {
-      margin-left: 0;
-      position: absolute;
-      right: -125px;
-      width: 38%;
-    }
-  }
-
-  &__image {
-    height: auto;
-    width: 100%;
   }
 
   .button--arrow {
@@ -163,13 +58,6 @@
       }
     }
   }
-
-  // &__button-group {
-  //   .button {
-  //     margin-right: 1rem;
-  //   }
-  //}
-
 }
 
 @keyframes blink {
