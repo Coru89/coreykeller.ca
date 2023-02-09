@@ -42,7 +42,6 @@
     "sass": "^1.54.8",
     "semver": "^7.3.7",
     "vinyl-named": "^1.1.0",
-    "webpack": "^4.44.1",
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {}

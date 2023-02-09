@@ -21,21 +21,21 @@
   --color-selection-bg: #{get-color(black)};
   --color-stroke: #{get-color(grey)};
   --color-action-bg: #{get-color(white)};
-  --color-action-text: #{get-color(black)};
-  --color-theme-primary: #{get-color('teal')};
+  --color-action-text: #{get-color(white)};
+  --color-theme-primary: #{get-color('green-teal')};
   //--color-theme-primary-light: #{get-color('primary-light')};
-  --color-theme-highlight: #{get-color('primary')};
-  --color-theme-highlight-block: #{get-color('primary')};
-  --color-theme-icon: #{get-color('primary')};
+  --color-theme-highlight: #{get-color('dark-blue')};
+  --color-theme-highlight-block: #{get-color('dark-blue')};
+  --color-theme-icon: #{get-color('dark-blue')};
 
   //for dark mode toggle button
-  --color-theme-toggle-icon: #{get-color(white)};
-  --color-theme-toggle-bg: #{get-color('primary')};
+  --color-theme-toggle-icon: #{get-color('green-light')};
+  --color-theme-toggle-bg: #{get-color('blue-dark')};
 
   // nav
   --color-nav-menu-text: #{get-color('blue-dark')};
   --color-nav-menu-bg: #{get-color(white)};
-  --color-nav-active-accent: #{get-color('primary')};
+  --color-nav-active-accent: #{get-color('blue-dark')};
 
   // hero
   --color-hero-heading: #{get-color(white)};
@@ -52,19 +52,19 @@
   --color-theme-primary-lighter: #{get-color(white)};
   --color-action-bg: #{get-color(white)};
   --color-action-text: #{get-color(black)};
-  --color-theme-highlight: #{get-color('primary')};
+  --color-theme-highlight: #{get-color('dark-blue')};
   --color-theme-highlight-block: #{get-color('slate')};
   --color-theme-feature-text: #{get-color(white)};
   --color-theme-icon: #{get-color(white)};
 
   // for dark mode toggle button
   --color-theme-toggle-icon: #{get-color(white)};
-  --color-theme-toggle-bg: #{get-color('primary')};
+  --color-theme-toggle-bg: #{get-color('dark-blue')};
 
   // nav
   --color-nav-menu-text: #{get-color('black')};
   --color-nav-menu-bg: #{get-color(white)};
-  --color-nav-active-accent: #{get-color('teal')};
+  --color-nav-active-accent: #{get-color('green-teal')};
 
   // hero
   --color-hero-heading: #{get-color(white)};

@@ -2,40 +2,41 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   background-color: var(--color-action-bg);
-  border: 1px solid var(--color-grey);
-  border-radius: 25px;
+  border-radius: 4px;
   color: var(--color-action-text);
   cursor: pointer;
   display: inline-block;
   font-family: get-font(base);
-  font-size: get-font-size(base);
+  font-size: get-font-size(500);
+  font-weight: 500;
   line-height: 1;
   margin: 0;
   padding: 0.7rem calc(get-size('base') - 0.1rem);
   text-decoration: none;
   transition: background-color .1s ease-in, border-color .1s ease-in, color .1s ease-in;
+  letter-spacing: 3%;
 
-  &:hover,
-  &:focus {
-    background-color: var(--color-theme-primary);
-    border-color: var(--white);
-    color: var(--color-white);
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: var(--color-theme-primary);
+  //   border-color: var(--white);
+  //   color: var(--color-white);
+  // }
   
   &__alternate {
     background-color: transparent;
     color: var(--color-white);
 
-    &:hover,
-    &:focus {
-      background-color: var(--color-theme-primary);
-      border-color: var(--color-white);
-      color: var(--color-white);
+    // &:hover,
+    // &:focus {
+    //   background-color: var(--color-theme-primary);
+    //   border-color: var(--color-white);
+    //   color: var(--color-white);
   
-      svg {
-        stroke: var(--color-white);
-      }
-    }
+    //   svg {
+    //     stroke: var(--color-white);
+    //   }
+    // }
   }
 
   &__arrow-link {
@@ -46,8 +47,8 @@
 
     &:hover,
     &:focus {
-      background-color: transparent;
-      color: var(--color-black);
+      // background-color: transparent;
+      // color: var(--color-black);
       filter: none;
   
       svg {
@@ -85,8 +86,8 @@
 .button--arrow {
   background-color: var(--color-theme-primary);
   color: var(--color-white);
-  font-size: get-font-size(300);
-  text-transform: uppercase;
+  // font-size: get-font-size(600);
+  //text-transform: uppercase;
 
   svg {
     margin-left: .5rem;
@@ -104,10 +105,10 @@
   &:hover,
   &:focus {
     background-color: var(--color-white);
-    color: var(--color-theme-primary);
+    color: var(--color-action-text);
 
     svg {
-      stroke: var(--color-theme-primary);
+      stroke: var(--color-white);
     }
   }
 
