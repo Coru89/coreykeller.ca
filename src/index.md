@@ -15,16 +15,17 @@ heroImage: "/images/night-sky-fancy.png"
 page_sections:
 - template: about
   backgroundColor: grey
-  imageURL: images/placeholder-image.jpg
+  imageURL: images/portrait.png
   imagePosition: left
   buttonText: Learn more
   buttonPath: "/services/websites"
-  title: Websites
-  imageAlt: placeholder
+  title: About
+  titleSecondary: Meet Corey
+  imageAlt: Corey Keller
+  titleSummary: A Front-end Developer building lightning-fast, user-friendly websites.
   summary: |-
-    We deliver website solutions while keeping the project goal and the user expereince forefront. Picking the right technology stack and creating intuitive interfaces are of the utmost importance to us.
-
-    Our development team is expereinced with a wide variety of CMS platforms and take a right-tool-for-the-job approach. Our websites are optimized for page load speed, follow best practices and achieve pefect technical SEO scores in Google Lighthouse.
+    <p>I am front-end developer with a background in enterprise IT consulting. My passion for web development stems from the creative challenges it presents, and I find great fulfillment in solving complex problems through coding. After a near decade working in the corporate world, I made the decision to relocate to Chiang Mai, Thailand, where I now work as a freelancer. I specialize in helping small and medium-sized businesses build and maintain their online presence, leveraging my expertise in platforms such as Shopify, WordPress, and Craft CMS.</p>
+    <p>When I'm not coding, I enjoy going on off-road adventures on my motorcycle in northern Thailand. I find the physical challenge of navigating new trails to be a great balance to the mental demands of web development. I also have an interest in trying new dishes and exploring different flavors during my travels.</p>
 # - template: portfolio-featured-panel
 #   title: Vanmade Gear
 #   summary: Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
