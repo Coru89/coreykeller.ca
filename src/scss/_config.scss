@@ -14,7 +14,7 @@ $breakpoints-config: (
 //  * Various misc metrics to use around the site
 //  */
 $metrics: (
-   'panel-container': 82rem
+   'panel-container': 68rem
 );
 $colors: map-get($tokens, 'colors');
 $font-size-scale: map-get($tokens, 'font-size-scale');
