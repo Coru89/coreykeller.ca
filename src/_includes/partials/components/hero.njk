@@ -1,41 +1,41 @@
 <header class="hero">
 	<div class="hero__inner">
-		<div class="hero__text-content">
-			<div class="hero__heading-wrapper">
-				<div class="hero__heading-row">
-					<h1 id="header" class="hero__heading">{{ props.heroHeading | safe }}</h1>
-					<h1 id="cursor" class="hero__heading hero__cursor">|</h1>
 
-					{% if props.heroHeading2 %}
-						<h1 class="hero__heading">{{ props.heroHeading2 | safe }}</h1>
-					{% endif %}
-				</div>
- 
-				<div class="hero__heading-row">
-					{% if props.heroHeading3 %}
-						<h1 class="hero__heading">{{ props.heroHeading3 | safe }}</h1>
-					{% endif %}
-					{% if props.heroHeading4 %}
-						<h1 class="hero__heading hero__heading-emphasis">{{ props.heroHeading4 | safe }}</h1>
-					{% endif %}
-				</div>
+		<div class="hero__heading-wrapper">
+			<div class="hero__heading-row">
+				<h1 id="header" class="hero__heading">{{ props.heroHeading | safe }}</h1>
+				<h1 id="cursor" class="hero__heading hero__cursor">|</h1>
+
+				{% if props.heroHeading2 %}
+					<h1 class="hero__heading">{{ props.heroHeading2 | safe }}</h1>
+				{% endif %}
 			</div>
-			{# {% if props.heroServices %}
-				<span class="hero__services-label">Competencies:</span>
-				<div class="hero__services">
-					{% for service in props.heroServices %}
-						{{ button_link_inverse(service.heroServiceLinkText, service.heroServiceLinkUrl, false) }}
-					{% endfor %}
-					{{ arrow_link('See the full list', '/services') }}
-				</div>
-				<div class="hero__help">
-			{% endif %} #}
-				{# <div class="hero__help-text">
-					Need help on your next web project?
-				</div>
-				{{ button_link_inverse("Let's Chat", '/contact', true) }} #}
+
+			<div class="hero__heading-row">
+				{% if props.heroHeading3 %}
+					<h1 class="hero__heading">{{ props.heroHeading3 | safe }}</h1>
+				{% endif %}
+				{% if props.heroHeading4 %}
+					<h1 class="hero__heading hero__heading-emphasis">{{ props.heroHeading4 | safe }}</h1>
+				{% endif %}
 			</div>
 		</div>
+		{# {% if props.heroServices %}
+			<span class="hero__services-label">Competencies:</span>
+			<div class="hero__services">
+				{% for service in props.heroServices %}
+					{{ button_link_inverse(service.heroServiceLinkText, service.heroServiceLinkUrl, false) }}
+				{% endfor %}
+				{{ arrow_link('See the full list', '/services') }}
+			</div>
+			<div class="hero__help">
+		{% endif %} #}
+			{# <div class="hero__help-text">
+				Need help on your next web project?
+			</div>
+			{{ button_link_inverse("Let's Chat", '/contact', true) }} #}
+		</div>
+
 
 		{# <div class="hero__image-wrapper">
 			{% if props.heroImage %}

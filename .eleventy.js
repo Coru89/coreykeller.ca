@@ -88,40 +88,40 @@ module.exports = function (eleventyConfig) {
   const now = new Date();
 
   // Custom collections
-  const livePosts = (post) => post.date <= now && !post.data.draft;
-  eleventyConfig.addCollection('postFeed', collection => {
-    return [...collection.getFilteredByGlob('./src/content/posts/*.md').filter(livePosts)]
-      .reverse()
-      .slice(0, site.maxPostsPerPage);
-  });
+  // const livePosts = (post) => post.date <= now && !post.data.draft;
+  // eleventyConfig.addCollection('postFeed', collection => {
+  //   return [...collection.getFilteredByGlob('./src/content/posts/*.md').filter(livePosts)]
+  //     .reverse()
+  //     .slice(0, site.maxPostsPerPage);
+  // });
 
-    // Custom collections
-    const livePostsPortfolio = portfolio => portfolio.date <= now && !portfolio.data.draft;
-    eleventyConfig.addCollection('porfolio', collection => {
-      return [
-        ...collection.getFilteredByGlob('./src/content/pages/work/*.md').filter(livePostsPortfolio)
-      ].reverse();
-    });
-  
-    eleventyConfig.addCollection('portfolioFeed', collection => {
-      return [...collection.getFilteredByGlob('./src/content/pages/work/*.md').filter(livePostsPortfolio)]
-        .reverse()
-        .slice(0, site.maxPostsPerPage);
-    });
+  //   // Custom collections
+  //   const livePostsPortfolio = portfolio => portfolio.date <= now && !portfolio.data.draft;
+  //   eleventyConfig.addCollection('porfolio', collection => {
+  //     return [
+  //       ...collection.getFilteredByGlob('./src/content/pages/work/*.md').filter(livePostsPortfolio)
+  //     ].reverse();
+  //   });
+
+  //   eleventyConfig.addCollection('portfolioFeed', collection => {
+  //     return [...collection.getFilteredByGlob('./src/content/pages/work/*.md').filter(livePostsPortfolio)]
+  //       .reverse()
+  //       .slice(0, site.maxPostsPerPage);
+  //   });
 
 
   // import all macros into posts / pages (minus index) so that end user doesn not need to for each page
-  eleventyConfig.addCollection('content', (collectionApi) => {
-    // Note: Update the path to point to your macro file
-    const macroImport = `{% import "macros/macros.njk" as macro with context %}`;
-    // Note: Update the pattern below to include all files that need macros imported
-    // Note: Collections don’t include layouts or includes, which still require importing macros manually
-    let collection = collectionApi.getFilteredByGlob('src/content/**/*.md');
-    collection.forEach((item) => {
-      item.template.frontMatter.content = `${macroImport}\n${item.template.frontMatter.content}`;
-    });
-    return collection;
-  });
+  // eleventyConfig.addCollection('content', (collectionApi) => {
+  //   // Note: Update the path to point to your macro file
+  //   const macroImport = `{% import "macros/macros.njk" as macro with context %}`;
+  //   // Note: Update the pattern below to include all files that need macros imported
+  //   // Note: Collections don’t include layouts or includes, which still require importing macros manually
+  //   let collection = collectionApi.getFilteredByGlob('src/content/**/*.md');
+  //   collection.forEach((item) => {
+  //     item.template.frontMatter.content = `${macroImport}\n${item.template.frontMatter.content}`;
+  //   });
+  //   return collection;
+  // });
 
   // Plugins
   eleventyConfig.addPlugin(rssPlugin);

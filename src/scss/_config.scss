@@ -2,6 +2,7 @@
 
 $breakpoints: map-get($tokens, 'breakpoints');
 $breakpoints-config: (
+   'xs': '(min-width: 24em)',
    'sm': '(min-width: 36em)',
    'md': '(min-width: 48em)',
    'lg': '(min-width: 62em)',

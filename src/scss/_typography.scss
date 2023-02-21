@@ -502,7 +502,7 @@ h4 {
 }
 
 h1 {
-  font-size: get-font-size(700);
+  font-size: get-font-size(900);
 }
 
 h2 {
@@ -529,7 +529,7 @@ h4 {
 
 @include media-query('md') {
    h1 {
-     font-size: get-font-size(900);
+     font-size: get-font-size(max);
      font-weight: 500;
    }
 

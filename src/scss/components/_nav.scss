@@ -6,9 +6,9 @@
 
     cursor: pointer;
     position: absolute;
-    right: 0;
+    left: 0;
     top: calc(35px / 2);
-    z-index: 1;
+    z-index: 2;
 
     @include media-query(md) {
       display: none;
@@ -30,7 +30,8 @@
         background-color: var(--color-nav-menu-bg);
         display: flex;
         flex-direction: column;
-        top: 65px;
+        //top: 65px;
+        //padding-top: 51px;
       }
 
       .nav__button {
@@ -50,7 +51,7 @@
     display: none;
     left: 0;
     margin: 0 -1.5rem;
-    padding: 0 1.5rem;
+    padding: 51px 1.5rem 1.5rem;
     position: absolute;
     right: 0;
     z-index: 1;
@@ -130,10 +131,10 @@
   }
 
   &__item {
-    border-bottom: 1px solid var(--color-grey);
+    //border-bottom: 1px solid var(--color-grey);
     color: var(--color-nav-menu-text);
     display: block;
-    font-size: get-font-size(500);
+    font-size: get-font-size(600);
     font-size: 18px;
     position: relative;
     white-space: nowrap;
@@ -311,12 +312,14 @@
   }
 
   &__contact .button {
-    background-color: var(--color-blue-dark);
+    background-color: var(--color-green-dark);
     text-align: center;
     width: 100%;
 
     svg {
       float: right;
+      position: relative;
+      top: 3px;
     }
 
     @include media-query(sm) {

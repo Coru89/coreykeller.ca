@@ -5,14 +5,22 @@
   &__heading {
     display: inline;
     font-family: get-font(serif);
-    font-size: 54px;
     font-weight: 400;
     line-height: 1.5;
     overflow: hidden;
     padding: 0;
 
     &-wrapper {
-      margin-bottom: 3rem
+      margin-bottom: 3rem;
+      min-height: 301px;
+
+      @include media-query(xs) {
+        min-height: 235px;
+      }
+
+      @include media-query(sm) {
+        min-height: auto;
+      }
     }
 
     &-emphasis {
@@ -24,6 +32,19 @@
         .hero__heading {
           font-weight: 400;
           font-style: italic;
+
+          &:last-of-type {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0;
+
+            @include media-query(md) {
+              display: inline;
+            }
+          }
+
+
+
         }
       }
     }
