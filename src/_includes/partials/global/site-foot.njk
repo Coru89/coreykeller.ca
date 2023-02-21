@@ -1,27 +1,6 @@
 <footer role="contentinfo" class="site-foot">
   <div class="site-foot__wrapper">
     <div class="site-foot__row">
-      {# <div class="site-foot__logo-container">
-        {% svg "logo" %}
-      </div> #}
-      {% if footer.items %}
-        {% for item in footer.items %}
-          <ul class="site-foot__link-list">
-            <li class="site-foot__link-list-item site-foot__link-list-item--header">
-              <a {% if item.url %}href="{{ item.url }}"{% endif %} class="site-foot__link">{{ item.text }}</a>
-            </li>
-          {% if item.items %}
-            {% for item in item.items %}
-              <li class="site-foot__link-list-item">
-                <a href="{{ item.url }}" class="site-foot__link">{{ item.text }}</a>
-              </li>
-            {% endfor %}
-            </ul>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    </div>
-    <div class="site-foot__row">
       <div class="site-foot__credit">
         <p>Copyright ©<span id="copyright-year"></span> Corey Keller. All rights reserved.</p>
         <script>

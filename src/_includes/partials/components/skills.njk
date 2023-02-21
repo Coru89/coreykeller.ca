@@ -1,0 +1,43 @@
+{% from "macros/macros.njk" import button_link %}
+
+{% if props | length %}
+
+<section class="skills">
+  <svg class="skills__divider" width="1680" height="120" viewBox="0 0 1680 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 14L560 82L1120 54L1680 0V120H1120H560H0V14Z" fill="#ECD8D5" class="shape-fill"/>
+  </svg>
+  <div class="skills__inner">
+      <div class="skills__row">
+        <h2>{{ props.title }}</h2>
+        <h3 class="section__heading">{{ props.titleSecondary }}</h3>
+        <p class="skills__summary">{{ props.summary | safe }}</p>
+    </div>  
+    <div class="skills__row">
+    </div>
+  </div>
+</section>
+{% endif %}
+
+
+  <style>
+    .skills__divider {
+      position: absolute;
+      top: -120px;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .skills__divider svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 120px;
+      transform: rotateY(180deg);
+    }
+
+    .skills__divider .shape-fill {
+      fill: #ECD8D5;
+    }
+  </style>

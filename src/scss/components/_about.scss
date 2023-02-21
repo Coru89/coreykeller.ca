@@ -2,11 +2,11 @@
   background-color: var(--color-beige);
   position: relative;
   display: flex;
-  padding: calc(4rem + 120px) 0 4rem;
+  padding: calc(2rem + 120px) 0;
   justify-content: center;
 
   @include media-query(lg) {
-    padding: calc(6rem + 120px) 0 6rem;
+    padding: calc(3rem + 120px) 0;
   }
 
   &__inner {

@@ -1,18 +1,6 @@
 {% for block in page_sections %}
-    {% if block.template === 'image-text-panel' %}
-        {{ component('image-text-panel', {
-            title: block.title,
-            summary: block.summary,
-            buttonText: block.buttonText,
-            buttonPath: block.buttonPath,
-            imageURL: block.imageURL,
-            imageAlt: block.imageAlt,
-            imagePosition: block.imagePosition,
-            backgroundColor: block.backgroundColor,
-            fullBleed: block.fullBleed
-        }) }}
 
-    {% elseif block.template === 'about' %}
+    {% if block.template === 'about' %}
         {{ component('about', {
             title: block.title,
             titleSecondary: block.titleSecondary,
@@ -27,97 +15,21 @@
             fullBleed: block.fullBleed
         }) }}
 
-        {% elseif block.template === 'skills' %}
-            {{ component('skills', {
+    {% elseif block.template === 'skills' %}
+        {{ component('skills', {
             title: block.title,
-            summary: block.summary,
+            titleSecondary: block.titleSecondary,
             buttonText: block.buttonText,
             buttonPath: block.buttonPath,
-            imageURL: block.imageURL,
-            imageAlt: block.imageAlt,
-            imagePosition: block.imagePosition,
-            backgroundColor: block.backgroundColor,
-            fullBleed: block.fullBleed
-        }) }}
-
-
-    {% elseif block.template === 'portfolio-featured-panel' %}
-        {{ component('portfolio-featured-panel', {
-            title: block.title,
-            summary: block.summary,
-            buttonText: block.buttonText,
-            buttonPath: block.buttonPath,
-            imageURL: block.imageURL,
-            imageAlt: block.imageAlt,
-            imagePosition: block.imagePosition,
-            backgroundColor: block.backgroundColor,
-            isBottom: block.isBottom
-        }) }}
-    
-    {% elseif block.template === 'text-area' %}
-        {{ block.text | safe }}
-
-    {% elseif block.template === 'image-with-caption' %}
-        {{ component('image-with-caption', {
-            image: block.image,
-            imageAlt: block.imageAlt,
-            imageCaption: block.imageCaption,
-            fullBleed: block.fullBleed
-        }) }}
-
-    {% elseif block.template === 'cards-with-icon' %}
-        {{ component('cards-icon-panel', {
-            cards: block.cards,
-            heading: block.heading,
-            buttonText: block.buttonText,
-            buttonPath: block.buttonPath,
-            backgroundColor: block.backgroundColor
-        }) }}
-
-    {% elseif block.template === 'service-panel' %}
-        {{ component('service-panel', {
-            title: block.title,
-            serviceCards: block.serviceCards
-        }) }}
-
-    {% elseif block.template === 'portfolio-featured-panel-small' %}
-        {{ component('portfolio-featured-panel-small', {
-            title: block.title,
-            description: block.description,
-            buttonText: block.buttonText,
-            buttonPath: block.buttonPath,
-            image: block.image,
-            imageAlt: block.imageAlt,
-            imagePosition: block.imagePosition
-        }) }}
-
-    {% elseif block.template === 'call-to-action' %}
-        {{ component('call-to-action', {
-            text: block.text,
-            buttonText: block.buttonText,
-            buttonPath: block.buttonPath
-        }) }}
-
-    {% elseif block.template === 'steps-panel' %}
-        {{ component('steps', {
-            heading: block.heading,
-            backgroundColor: block.backgroundColor,
-            steps: block.steps,
-            title: block.title,
             summary: block.summary
         }) }}
 
-    {% elseif block.template === 'technologies-panel' %}
-        {{ component('technologies', {
-            panelHeading: block.panelHeading,
-            technologies: block.technologies
+    {% elseif block.template === 'featured-work' %}
+        {{ component('featured-work', {
+            title: block.title,
+            titleSecondary: block.titleSecondary,
+            items: block.items
         }) }}
-
-    {% elseif block.template === 'blockquote' %}
-        <blockquote>
-            <p>
-                {{ block.text }}
-            </p>
-        </blockquote>
+    
     {% endif %}
 {% endfor %}

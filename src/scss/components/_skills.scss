@@ -1,0 +1,32 @@
+.skills {
+  background-color: var(--color-pink);
+  position: relative;
+  display: flex;
+  padding: calc(2rem + 120px) 0 4rem;
+  justify-content: center;
+
+  @include media-query(lg) {
+    padding: calc(3rem) 0;
+  }
+
+  &__inner {
+    @include panel-container;
+    padding: 0;
+    margin: 0 1.5rem;
+
+    @include media-query(lg) {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  }
+
+  &__row {
+    &:last-of-type {
+      @include media-query(lg) {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}
