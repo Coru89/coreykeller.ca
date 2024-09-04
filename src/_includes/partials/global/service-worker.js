@@ -7,8 +7,8 @@ const CACHE_KEYS = {
 const EXCLUDED_URLS = [
   'admin',
   '.netlify',
-  'https://identity.netlify.com/v1/netlify-identity-widget.js',
-  'https://unpkg.com/netlify-cms@^2.9.3/dist/netlify-cms.js',
+  // 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+  // 'https://unpkg.com/netlify-cms@^2.9.3/dist/netlify-cms.js',
   '/contact',
   '/thank-you'
 ];
