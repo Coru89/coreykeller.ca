@@ -6,7 +6,7 @@
   "scripts": {
     "sass:tokens": "npx json-to-scss src/_data/tokens.json src/scss/tokens.scss",
     "start": "npx gulp && concurrently \"npm run sass:tokens -- --watch\" \"npx gulp watch\" \"npx eleventy --input=src --serve --config=.eleventy.js\"",
-    "build": "cross-env NODE_ENV=production npx gulp && cross-env NODE_ENV=production npx eleventy --input=src --config=.eleventy.js",
+    "build": "cross-env NODE_ENV=production npx gulp && cross-env NODE_ENV=production npx eleventy --input=src --config=.eleventy.js"
   },
   "keywords": [],
   "author": "",
