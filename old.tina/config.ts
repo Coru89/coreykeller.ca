@@ -1,24 +1,21 @@
 import { defineConfig } from "tinacms";
 
-import { about_sectionFields } from "./templates";
 import { bio_cardsFields } from "./templates";
 import { blockquoteFields } from "./templates";
 import { call_to_actionFields } from "./templates";
 import { cards_with_iconFields } from "./templates";
-import { featured_work_panelFields } from "./templates";
 import { site_footFields } from "./templates";
 import { home_pageFields } from "./templates";
 import { image_text_panelFields } from "./templates";
 import { image_with_captionFields } from "./templates";
 import { pageFields } from "./templates";
+import { portfolio_itemFields } from "./templates";
 import { portfolio_content_panelFields } from "./templates";
 import { portfolio_featured_panel_smallFields } from "./templates";
 import { portfolio_featured_panelFields } from "./templates";
 import { portfolio_image_panelFields } from "./templates";
-import { portfolio_itemFields } from "./templates";
 import { postFields } from "./templates";
 import { service_panelFields } from "./templates";
-import { skills_sectionFields } from "./templates";
 import { stepsFields } from "./templates";
 import { technologies_panelFields } from "./templates";
 import { text_areaFields } from "./templates";
@@ -183,22 +180,6 @@ export default defineConfig({
                 name: "portfolio_featured_panel_small",
                 nameOverride: "portfolio-featured-panel-small",
               },
-              {
-                fields: skills_sectionFields(),
-                label: "Skills Section",
-                name: "skills",
-              },
-              {
-                fields: featured_work_panelFields(),
-                label: "Featured Work Panel",
-                name: "featured_work",
-                nameOverride: "featured-work",
-              },
-              {
-                fields: about_sectionFields(),
-                label: "About Section",
-                name: "about",
-              },
             ],
           },
           {
@@ -315,32 +296,32 @@ export default defineConfig({
               },
               {
                 type: "string",
-                name: "size_300",
+                name: "name_300",
                 label: "300",
               },
               {
                 type: "string",
-                name: "size_500",
+                name: "name_500",
                 label: "500",
               },
               {
                 type: "string",
-                name: "size_600",
+                name: "name_600",
                 label: "600",
               },
               {
                 type: "string",
-                name: "size_700",
+                name: "name_700",
                 label: "700",
               },
               {
                 type: "string",
-                name: "size_800",
+                name: "name_800",
                 label: "800",
               },
               {
                 type: "string",
-                name: "size_900",
+                name: "name_900",
                 label: "900",
               },
               {

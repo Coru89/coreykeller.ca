@@ -16,8 +16,23 @@ page_sections_portfolio: []
 useDarkTitle: true
 rollupCardOverlayBackgroundColor: '#FAB22B'
 rollupCardDescription: Powering your journey through mobile and custom solar solutions.
-_template: porfolio
+_template: portfolio
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

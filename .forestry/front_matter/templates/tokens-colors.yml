@@ -10,22 +10,22 @@ fields:
     name: base
     label: base
   - type: text
-    name: '300'
+    name: 'size_300'
     label: '300'
   - type: text
-    name: '500'
+    name: 'size_500'
     label: '500'
   - type: text
-    name: '600'
+    name: 'size_600'
     label: '600'
   - type: text
-    name: '700'
+    name: 'size_700'
     label: '700'
   - type: text
-    name: '800'
+    name: 'size_800'
     label: '800'
   - type: text
-    name: '900'
+    name: 'size_900'
     label: '900'
   - type: text
     name: max

@@ -1,30 +1,23 @@
 ---
-layout: home
 title: Corey Keller - Frontend Developer
-permalink: "index.html"
+permalink: index.html
 postsHeading: Insights
 archiveButtonText: See all insights
 portfolioHeading: Recent Work
 servicesHeading: Expertise
-metaDesc: Update me later
-socialImage: ''
 heroHeading: 'Hey there, bud.'
 heroHeading2: I'm Corey!
 heroHeading3: 'A '
 heroHeading4: Front-end Developer.
 heroImage: /images/night-sky-fancy.png
 page_sections:
-  - template: about
-    backgroundColor: grey
-    imageURL: images/portrait.png
-    imagePosition: left
-    buttonText: Learn more
-    buttonPath: /services/websites
-    title: About
+  - title: About
     titleSecondary: Meet Corey
-    imageAlt: Corey Keller
     titleSummary: 'A Front-end Developer building lightning-fast, user-friendly websites.'
     summary: >-
+      yoo
+
+
       <p>I am front-end developer with a background in enterprise IT consulting.
       My passion for web development stems from the creative challenges it
       presents, and I find great fulfillment in solving complex problems through
@@ -39,8 +32,14 @@ page_sections:
       navigating new trails to be a great balance to the mental demands of web
       development. I also have an interest in trying new dishes and exploring
       different flavors during my travels.</p>
-  - template: skills
-    title: Expertise
+    imageURL: /images/portrait-corey.png
+    imagePosition: left
+    imageAlt: Corey Keller
+    buttonText: Learn more
+    buttonPath: /services/websites
+    backgroundColor: grey
+    template: about
+  - title: Expertise
     titleSecondary: What I can do
     summary: >-
       With expertise in a wide range of popular content management systems,  I
@@ -51,8 +50,8 @@ page_sections:
       my favorite tools
     buttonText: Read More
     buttonPath: /portfolio/vanmadegear
-  - template: featured-work
-    title: Work
+    template: skills
+  - title: Work
     titleSecondary: What I've done
     items:
       - title: Vanmade Gear
@@ -76,12 +75,17 @@ page_sections:
         buttonPath: /portfolio/colonia-truehand
         imageURL: images/ctam-home-full.png
         imageAlt: Colonia Treuhand
-        backgroundColor: AA6373
         imagePosition: left
+        backgroundColor: AA6373
         isBottom: true
-
+    template: featured-work
+metaDesc: Update me later
+socialImage: ''
+layout: home
 ---
 
 <!-- do not delete -->
+
 {% import "macros/macros.njk" as macro with context %}
+
 <!-- do not delete -->

@@ -1,64 +1,4 @@
 import type { TinaField } from "tinacms";
-export function about_sectionFields() {
-  return [
-    {
-      type: "string",
-      name: "title",
-      label: "Title",
-      required: true,
-    },
-    {
-      type: "string",
-      name: "titleSecondary",
-      label: "Secondary Title",
-    },
-    {
-      type: "string",
-      name: "titleSummary",
-      label: "Title Summary",
-    },
-    {
-      type: "string",
-      name: "summary",
-      label: "Summary",
-      ui: {
-        component: "textarea",
-      },
-    },
-    {
-      type: "image",
-      name: "imageURL",
-      label: "Image URL",
-    },
-    {
-      type: "string",
-      name: "imagePosition",
-      label: "Image Position",
-      options: ["left", "right"],
-    },
-    {
-      type: "string",
-      name: "imageAlt",
-      label: "Image Alt Text",
-    },
-    {
-      type: "string",
-      name: "buttonText",
-      label: "Button Text",
-    },
-    {
-      type: "string",
-      name: "buttonPath",
-      label: "Button Path",
-    },
-    {
-      type: "string",
-      name: "backgroundColor",
-      label: "Background Color",
-      options: ["white", "green", "grey", "light green"],
-    },
-  ] as TinaField[];
-}
 export function bio_cardsFields() {
   return [
     {
@@ -190,79 +130,6 @@ export function cards_with_iconFields() {
     },
   ] as TinaField[];
 }
-export function featured_work_panelFields() {
-  return [
-    {
-      type: "string",
-      name: "title",
-      label: "Title",
-    },
-    {
-      type: "string",
-      name: "titleSecondary",
-      label: "Secondary Title",
-    },
-    {
-      type: "object",
-      name: "items",
-      label: "Items",
-      list: true,
-      fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
-          required: true,
-        },
-        {
-          type: "string",
-          name: "summary",
-          label: "Summary",
-          ui: {
-            component: "textarea",
-          },
-          required: true,
-        },
-        {
-          type: "string",
-          name: "buttonText",
-          label: "Button Text",
-        },
-        {
-          type: "string",
-          name: "buttonPath",
-          label: "Button Path",
-        },
-        {
-          type: "image",
-          name: "imageURL",
-          label: "Image URL",
-        },
-        {
-          type: "string",
-          name: "imageAlt",
-          label: "Image Alt",
-        },
-        {
-          type: "string",
-          name: "imagePosition",
-          label: "Image Position",
-          options: ["right", "left"],
-        },
-        {
-          type: "string",
-          name: "backgroundColor",
-          label: "Background Color (Hex)",
-        },
-        {
-          type: "boolean",
-          name: "isBottom",
-          label: "Is Bottom",
-        },
-      ],
-    },
-  ] as TinaField[];
-}
 export function site_footFields() {
   return [
     {
@@ -352,22 +219,6 @@ export function home_pageFields() {
           label: "Portfolio Featured Panel Small",
           name: "portfolio_featured_panel_small",
           nameOverride: "portfolio-featured-panel-small",
-        },
-        {
-          fields: skills_sectionFields(),
-          label: "Skills Section",
-          name: "skills",
-        },
-        {
-          fields: featured_work_panelFields(),
-          label: "Featured Work Panel",
-          name: "featured_work",
-          nameOverride: "featured-work",
-        },
-        {
-          fields: about_sectionFields(),
-          label: "About Section",
-          name: "about",
         },
       ],
     },
@@ -605,6 +456,109 @@ export function pageFields() {
     },
   ] as TinaField[];
 }
+export function portfolio_itemFields() {
+  return [
+    {
+      type: "string",
+      name: "client",
+      label: "Client",
+    },
+    {
+      type: "string",
+      name: "title",
+      label: "Title",
+    },
+    {
+      type: "boolean",
+      name: "useDarkTitle",
+      label: "Use Dark Title",
+    },
+    {
+      type: "string",
+      name: "year",
+      label: "Year",
+    },
+    {
+      type: "string",
+      name: "category",
+      label: "Category",
+      list: true,
+      ui: {
+        component: "tags",
+      },
+    },
+    {
+      type: "string",
+      name: "expertise",
+      label: "Expertise",
+      list: true,
+      ui: {
+        component: "tags",
+      },
+    },
+    {
+      type: "string",
+      name: "rollupCardDescription",
+      label: "Rollup Description",
+      ui: {
+        component: "textarea",
+      },
+    },
+    {
+      type: "image",
+      name: "rollupImage",
+      label: "Rollup Image",
+    },
+    {
+      type: "image",
+      name: "rollupBackgroundImage",
+      label: "Rollup Background Image",
+    },
+    {
+      type: "string",
+      name: "rollupCardBackgroundColor",
+      label: "Rollup Card Background Color",
+      ui: {
+        component: "color",
+      },
+    },
+    {
+      type: "string",
+      name: "rollupCardOverlayBackgroundColor",
+      label: "Rollup Card Overlay Background Color",
+      ui: {
+        component: "color",
+      },
+    },
+    {
+      type: "object",
+      list: true,
+      templateKey: "template",
+      label: "Page Sections",
+      name: "page_sections_portfolio",
+      templates: [
+        {
+          fields: portfolio_image_panelFields(),
+          label: "Portfolio Image Panel",
+          name: "portfolio_image_panel",
+          nameOverride: "portfolio-image-panel",
+        },
+        {
+          fields: portfolio_content_panelFields(),
+          label: "Portfolio Content Panel",
+          name: "portfolio_content_panel",
+          nameOverride: "portfolio-content-panel",
+        },
+        {
+          fields: call_to_actionFields(),
+          label: "Call to action",
+          name: "call_to_action",
+          nameOverride: "call-to-action",
+        },
+      ],
+    },
+  ] as TinaField[];
+}
 export function portfolio_content_panelFields() {
   return [
     {
@@ -837,109 +791,6 @@ export function portfolio_image_panelFields() {
     },
   ] as TinaField[];
 }
-export function portfolio_itemFields() {
-  return [
-    {
-      type: "string",
-      name: "client",
-      label: "Client",
-    },
-    {
-      type: "string",
-      name: "title",
-      label: "Title",
-    },
-    {
-      type: "boolean",
-      name: "useDarkTitle",
-      label: "Use Dark Title",
-    },
-    {
-      type: "string",
-      name: "year",
-      label: "Year",
-    },
-    {
-      type: "string",
-      name: "category",
-      label: "Category",
-      list: true,
-      ui: {
-        component: "tags",
-      },
-    },
-    {
-      type: "string",
-      name: "expertise",
-      label: "Expertise",
-      list: true,
-      ui: {
-        component: "tags",
-      },
-    },
-    {
-      type: "string",
-      name: "rollupCardDescription",
-      label: "Rollup Description",
-      ui: {
-        component: "textarea",
-      },
-    },
-    {
-      type: "image",
-      name: "rollupImage",
-      label: "Rollup Image",
-    },
-    {
-      type: "image",
-      name: "rollupBackgroundImage",
-      label: "Rollup Background Image",
-    },
-    {
-      type: "string",
-      name: "rollupCardBackgroundColor",
-      label: "Rollup Card Background Color",
-      ui: {
-        component: "color",
-      },
-    },
-    {
-      type: "string",
-      name: "rollupCardOverlayBackgroundColor",
-      label: "Rollup Card Overlay Background Color",
-      ui: {
-        component: "color",
-      },
-    },
-    {
-      type: "object",
-      list: true,
-      templateKey: "template",
-      label: "Page Sections",
-      name: "page_sections_portfolio",
-      templates: [
-        {
-          fields: portfolio_image_panelFields(),
-          label: "Portfolio Image Panel",
-          name: "portfolio_image_panel",
-          nameOverride: "portfolio-image-panel",
-        },
-        {
-          fields: portfolio_content_panelFields(),
-          label: "Portfolio Content Panel",
-          name: "portfolio_content_panel",
-          nameOverride: "portfolio-content-panel",
-        },
-        {
-          fields: call_to_actionFields(),
-          label: "Call to action",
-          name: "call_to_action",
-          nameOverride: "call-to-action",
-        },
-      ],
-    },
-  ] as TinaField[];
-}
 export function postFields() {
   return [
     {
@@ -1023,45 +874,6 @@ export function service_panelFields() {
           ],
         },
       ],
-    },
-  ] as TinaField[];
-}
-export function skills_sectionFields() {
-  return [
-    {
-      type: "string",
-      name: "title",
-      label: "Title",
-      required: true,
-    },
-    {
-      type: "string",
-      name: "titleSecondary",
-      label: "Secondary Title",
-    },
-    {
-      type: "string",
-      name: "summary",
-      label: "Summary",
-      ui: {
-        component: "textarea",
-      },
-    },
-    {
-      type: "string",
-      name: "buttonText",
-      label: "Button Text",
-    },
-    {
-      type: "string",
-      name: "buttonPath",
-      label: "Button Path",
-    },
-    {
-      type: "string",
-      name: "backgroundColor",
-      label: "Background Color",
-      options: ["white", "green", "grey", "light green"],
     },
   ] as TinaField[];
 }
@@ -1164,32 +976,32 @@ export function design_tokensFields() {
         },
         {
           type: "string",
-          name: "size_300",
+          name: "number_300",
           label: "300",
         },
         {
           type: "string",
-          name: "size_500",
+          name: "number_500",
           label: "500",
         },
         {
           type: "string",
-          name: "size_600",
+          name: "number_600",
           label: "600",
         },
         {
           type: "string",
-          name: "size_700",
+          name: "number_700",
           label: "700",
         },
         {
           type: "string",
-          name: "size_800",
+          name: "number_800",
           label: "800",
         },
         {
           type: "string",
-          name: "size_900",
+          name: "number_900",
           label: "900",
         },
         {

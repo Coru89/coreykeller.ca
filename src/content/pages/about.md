@@ -1,5 +1,6 @@
 ---
 title: About
+_template: page
 permalink: "/about/index.html"
 layout: page
 page_sections:

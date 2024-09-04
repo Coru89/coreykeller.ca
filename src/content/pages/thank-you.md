@@ -1,5 +1,6 @@
 ---
 title: 'Thank you'
+_template: page
 permalink: '/thank-you/index.html'
 ---
 

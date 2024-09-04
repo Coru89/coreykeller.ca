@@ -1,5 +1,6 @@
 ---
 title: Portfolio
+_template: page
 permalink: "/portfolio/index.html"
 layout: portfolio-landing.njk
 page_sections:

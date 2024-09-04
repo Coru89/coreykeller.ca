@@ -1,0 +1,67 @@
+---
+label: About Section
+hide_body: true
+fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: titleSecondary
+    type: text
+    config:
+      required: false
+    label: Secondary Title
+  - name: titleSummary
+    type: text
+    config:
+      required: false
+    label: Title Summary
+  - name: summary
+    type: textarea
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Summary
+  - name: imageURL
+    type: file
+    config:
+      maxSize: 5
+    label: Image URL
+  - name: imagePosition
+    type: select
+    default: left
+    config:
+      required: false
+      options:
+        - left
+        - right
+    label: Image Position
+  - name: imageAlt
+    type: text
+    config:
+      required: false
+    label: Image Alt Text
+  - name: buttonText
+    type: text
+    config:
+      required: false
+    label: Button Text
+  - name: buttonPath
+    type: text
+    config:
+      required: false
+    label: Button Path
+  - name: backgroundColor
+    type: select
+    default: grey
+    config:
+      required: false
+      options:
+        - white
+        - green
+        - grey
+        - light green
+    label: Background Color
