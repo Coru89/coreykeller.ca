@@ -66,7 +66,7 @@ page_sections:
         imagePosition: right
         backgroundColor: EE964B
         isBottom: false
-      - title: Colonia Treuhand
+      - title: Colonia Treuhand Test
         summary: >-
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
