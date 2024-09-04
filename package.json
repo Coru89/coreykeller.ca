@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-upgrade-help": "^2.0.5",
+    "sharp": "^0.33.5",
     "tinacms": "^2.2.2"
   }
 }
