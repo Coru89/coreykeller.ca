@@ -4,7 +4,7 @@ description:
 tags:
 - Craft CMS
 - Multilingual
-layout: layouts/portfolio.njk
+layout: portfolio.njk
 category: Website
 permalink: "/portfolio/colonia-treuhand/index.html"
 rollupImage: images/ct.png

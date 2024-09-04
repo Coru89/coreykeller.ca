@@ -1,7 +1,7 @@
 ---
 title: About
 permalink: "/about/index.html"
-layout: layouts/page.njk
+layout: page
 page_sections:
 ---
 

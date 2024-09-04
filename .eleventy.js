@@ -5,8 +5,6 @@ const path = require("path");
 const glob = require("glob");
 const lodash = require("lodash");
 
-const config = require("./eleventy.config")
-
 // Import filters
 const dateFilter = require('./src/filters/date-filter.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
@@ -14,46 +12,42 @@ const w3DateFilter = require('./src/filters/w3-date-filter.js');
 const sortByOrder = require('./src/filters/sort-by-order.js');
 const subNav = require('./src/filters/subNav.js');
 
-
 // Import data files
 const site = require('./src/_data/site.json');
-
 
 /**
  * Require all necessary files
  * brings in shortcodes / transforms from utils
  */
- const getUtilFiles = () => {
+const getUtilFiles = () => {
   // Utils directory.
-  //const dir = path.join(__dirname, `./src/_includes/shortcodes`)
-  const dir = path.join(__dirname, `./src/utils`)
+  const dir = path.join(__dirname, `./src/utils`);
   // Pattern of files to require from the directory.
-  const globFilesPattern = path.join(dir, "**/*.js")
+  const globFilesPattern = path.join(dir, "**/*.js");
   // Pattern of files to ignore from the directory.
-  const ignoreFiles = ["**/*.spec.js", "_**/*.js", "**/_*/**/*.js", "**/_*.js"]
-  const ignoreFilesPattern = ignoreFiles.map((pattern) => path.join(dir, pattern))
+  const ignoreFiles = ["**/*.spec.js", "_**/*.js", "**/_*/**/*.js", "**/_*.js"];
+  const ignoreFilesPattern = ignoreFiles.map((pattern) => path.join(dir, pattern));
   // Find all relevant files.
-  let files = glob.sync(globFilesPattern, { ignore: ignoreFilesPattern })
+  let files = glob.sync(globFilesPattern, { ignore: ignoreFilesPattern });
   // Ensure that they are configured correctly. Remove and log a message for
   // those that are not configured properly.
   files = files.map((file) => {
     // Import the file.
-    const module = require(file)
+    const module = require(file);
     // If everything looks good, return the module.
-    if (typeof lodash.get(module, "default") === "function") return module
+    if (typeof lodash.get(module, "default") === "function") return module;
     // Otherwise, we have a problem. Gather the appropriate message.
     const error = module.default
       ? `Export "default" must be a function.`
-      : `Missing "default" named export.`
+      : `Missing "default" named export.`;
     // Log the message.
-    console.error(`Could not load ${path.basename(file)}. ${error}`)
+    console.error(`Could not load ${path.basename(file)}. ${error}`);
     // And return null.
-    return null
-  })
+    return null;
+  });
   // Return all valid imports.
-  return files.filter((util) => util)
-}
-
+  return files.filter((util) => util);
+};
 
 module.exports = function (eleventyConfig) {
   // Filters
@@ -63,12 +57,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("sortByOrder", sortByOrder);
   eleventyConfig.addFilter("subNav", subNav);
   eleventyConfig.addFilter('log', value => {
-    console.log(value)
-})
-  // Layout aliases
-  eleventyConfig.addLayoutAlias('home', 'layouts/home.njk');
+    console.log(value);
+  });
 
-  // watch sass
+  eleventyConfig.setLayoutResolution(false);
+
+  // Layout aliases
+  eleventyConfig.addLayoutAlias('home', 'home.njk');
+  eleventyConfig.addLayoutAlias('page', 'page.njk');
+  eleventyConfig.addLayoutAlias('base', 'base.njk');
+
+  // Watch targets
   eleventyConfig.addWatchTarget('src/scss');
   eleventyConfig.addWatchTarget('src/images');
   eleventyConfig.addWatchTarget('dist/img');
@@ -84,51 +83,22 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/robots.txt');
   eleventyConfig.addPassthroughCopy('src/*.png');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
+  eleventyConfig.addPassthroughCopy('src/_includes/svg');
 
   const now = new Date();
 
   // Custom collections
-  // const livePosts = (post) => post.date <= now && !post.data.draft;
-  // eleventyConfig.addCollection('postFeed', collection => {
-  //   return [...collection.getFilteredByGlob('./src/content/posts/*.md').filter(livePosts)]
-  //     .reverse()
-  //     .slice(0, site.maxPostsPerPage);
-  // });
+  // ...
 
-  //   // Custom collections
-  //   const livePostsPortfolio = portfolio => portfolio.date <= now && !portfolio.data.draft;
-  //   eleventyConfig.addCollection('porfolio', collection => {
-  //     return [
-  //       ...collection.getFilteredByGlob('./src/content/pages/work/*.md').filter(livePostsPortfolio)
-  //     ].reverse();
-  //   });
-
-  //   eleventyConfig.addCollection('portfolioFeed', collection => {
-  //     return [...collection.getFilteredByGlob('./src/content/pages/work/*.md').filter(livePostsPortfolio)]
-  //       .reverse()
-  //       .slice(0, site.maxPostsPerPage);
-  //   });
-
-
-  // import all macros into posts / pages (minus index) so that end user doesn not need to for each page
-  // eleventyConfig.addCollection('content', (collectionApi) => {
-  //   // Note: Update the path to point to your macro file
-  //   const macroImport = `{% import "macros/macros.njk" as macro with context %}`;
-  //   // Note: Update the pattern below to include all files that need macros imported
-  //   // Note: Collections don’t include layouts or includes, which still require importing macros manually
-  //   let collection = collectionApi.getFilteredByGlob('src/content/**/*.md');
-  //   collection.forEach((item) => {
-  //     item.template.frontMatter.content = `${macroImport}\n${item.template.frontMatter.content}`;
-  //   });
-  //   return collection;
-  // });
+  // Import all macros into posts/pages (minus index) so that end user does not need to for each page
+  // ...
 
   // Plugins
   eleventyConfig.addPlugin(rssPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
 
   // Forestry instant previews
-  if (process.env.ELEVENTY_ENV == 'development') {
+  if (process.env.ELEVENTY_ENV === 'development') {
     eleventyConfig.setBrowserSyncConfig({
       host: '0.0.0.0',
     });
@@ -149,13 +119,29 @@ module.exports = function (eleventyConfig) {
     },
   });
 
-    // --- Utils --- //
-    //
-    getUtilFiles().map((util) => util.default(eleventyConfig))
-    //
-    // --- Return --- //
-    //
-    // Return the config object. (This is what actually sets the config for
-    // Eleventy. It was written above for reference within utils.)
-    return config
+  const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+  eleventyConfig.addPlugin(UpgradeHelper);
+
+  // --- Utils --- //
+  //
+  getUtilFiles().map((util) => util.default(eleventyConfig));
+  //
+  // --- Return --- //
+  //
+  // Return the config object. (This is what actually sets the config for
+  // Eleventy. It was written above for reference within utils.)
+  return {
+    markdownTemplateEngine: 'njk', // Correctly set Nunjucks as the markdown template engine
+    templateFormats: ['html', 'njk', 'md', 'js'], // Fixed the typo here
+    dir: {
+      input: 'src',
+      includes: '_includes',
+      data: '_data',
+      output: 'dist',
+      layouts: '_layouts' // Updated to point to new layouts director
+    },
+  };
 };
+
+
+

@@ -3,7 +3,7 @@ title: ''
 tags:
 - e-Commerce
 - Shopify
-layout: layouts/portfolio.njk
+layout: portfolio.njk
 permalink: "/portfolio/solar-advantage/index.html"
 client: Solar Advantage
 year: "2022"

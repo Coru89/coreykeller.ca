@@ -6,7 +6,7 @@ category: Ecommerce
 expertise:
 - Shopify
 - Ecommerce
-layout: layouts/portfolio.njk
+layout: portfolio.njk
 permalink: "/portfolio/vanmadegear/index.html"
 page_sections_portfolio:
 - template: portfolio-image-panel

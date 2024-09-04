@@ -1,7 +1,7 @@
 ---
 title: E-commerce
 permalink: "/services/ecommerce/index.html"
-layout: layouts/page.njk
+layout: page
 headerSummary: "<p>E-commerce is booming like never before and it's more important
   that ever to distinguish your digital market place. Corey Keller specializes in e-commerce
   solutions for small and mid-size businesses. Our ecommerce portals will improve

@@ -5,7 +5,7 @@ tags:
 - Jamstack
 - Forestry CMS
 - Netlify
-layout: layouts/portfolio.njk
+layout: portfolio.njk
 permalink: "/portfolio/armstrong-hearing/index.html"
 rollupCardBackgroundColor: "#F3FCF6"
 client: Armstrong Hearing

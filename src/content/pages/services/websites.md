@@ -1,7 +1,7 @@
 ---
 title: Websites
 permalink: "/services/websites/index.html"
-layout: layouts/page.njk
+layout: page
 headerSummary: "<p>When a website is outdated, poorly designed or otherwise frustrating,
   it is falling short of its potential to qualify leads and build reputation for your
   business. Need a new site or a refresh? Work with us to create a modern website
