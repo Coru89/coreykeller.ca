@@ -3,12 +3,11 @@
   "version": "0.7.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "sass:tokens": "npx json-to-scss src/_data/tokens.json src/scss/tokens.scss",
-  "start": "npx gulp && concurrently \"npm run sass:tokens -- --watch\" \"npx gulp watch\" \"npx eleventy --input=src --serve --config=.eleventy.js\"",
-  "build": "cross-env NODE_ENV=production npx gulp && cross-env NODE_ENV=production npx eleventy --input=src --config=.eleventy.js"
-},
-
+  "scripts": {
+    "sass:tokens": "npx json-to-scss src/_data/tokens.json src/scss/tokens.scss",
+    "start": "npx gulp && concurrently \"npm run sass:tokens -- --watch\" \"npx gulp watch\" \"npx eleventy --input=src --serve --config=.eleventy.js\"",
+    "build": "cross-env NODE_ENV=production npx gulp && cross-env NODE_ENV=production npx eleventy --input=src --config=.eleventy.js",
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -20,6 +19,8 @@
     "@babel/preset-env": "^7.19.0",
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
     "@tbranyen/jsdom": "^13.0.0",
+    "@tinacms/cli": "^1.6.2",
+    "@types/node": "^22.5.3",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^7.3.0",
     "cross-env": "^7.0.3",
@@ -46,6 +47,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "@11ty/eleventy-upgrade-help": "^2.0.5"
+    "@11ty/eleventy-upgrade-help": "^2.0.5",
+    "tinacms": "^2.2.2"
   }
 }
