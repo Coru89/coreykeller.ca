@@ -10,14 +10,14 @@ heroHeading2: I'm Corey!
 heroHeading3: 'A '
 heroHeading4: Front-end Developer.
 heroImage: /images/night-sky-fancy.png
+metaDesc: Update me later
+socialImage: ''
+layout: home
 page_sections:
   - title: About
     titleSecondary: Meet Corey
     titleSummary: 'A Front-end Developer building lightning-fast, user-friendly websites.'
     summary: >-
-      yoo
-
-
       <p>I am front-end developer with a background in enterprise IT consulting.
       My passion for web development stems from the creative challenges it
       presents, and I find great fulfillment in solving complex problems through
@@ -79,9 +79,15 @@ page_sections:
         backgroundColor: AA6373
         isBottom: true
     template: featured-work
-metaDesc: Update me later
-socialImage: ''
-layout: home
+  - title: Hit Me Up!
+    titleSecondary: Contact
+    summary: >-
+      When a website is outdated, poorly designed or otherwise frustrating, it
+      is falling short of its potential to qualify leads and build reputation
+      for your business. Need a new site or a refresh? Work with us to create a
+      modern website that will strengthen your brand, credibility,
+      professionalism and serve as a hub of your online prescense.
+    template: Contact
 ---
 
 <!-- do not delete -->

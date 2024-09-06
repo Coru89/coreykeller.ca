@@ -1,6 +1,7 @@
 import { defineConfig } from "tinacms";
 
 import { about_sectionFields } from "./templates";
+import { contact_sectionFields } from "./templates";
 import { bio_cardsFields } from "./templates";
 import { blockquoteFields } from "./templates";
 import { call_to_actionFields } from "./templates";
@@ -35,9 +36,9 @@ export default defineConfig({
   branch,
 
   // Get this from tina.io
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
+  clientId: "0c5203da-6230-46aa-850a-b26e8abef560",
   // Get this from tina.io
-  token: process.env.TINA_TOKEN,
+  token: "d7d2ce7a1b36d9675b3d1348e5f2f64e589ad470",
 
   client: { skip: true },
   build: {
@@ -198,6 +199,11 @@ export default defineConfig({
                 fields: about_sectionFields(),
                 label: "About Section",
                 name: "about",
+              },
+              {
+                fields: contact_sectionFields(),
+                label: "Contact Section",
+                name: "Contact",
               },
             ],
           },

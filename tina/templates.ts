@@ -59,6 +59,31 @@ export function about_sectionFields() {
     },
   ] as TinaField[];
 }
+
+export function contact_sectionFields() {
+  return [
+    {
+      type: "string",
+      name: "title",
+      label: "Title",
+      required: true,
+    },
+    {
+      type: "string",
+      name: "titleSecondary",
+      label: "Secondary Title",
+    },
+    {
+      type: "string",
+      name: "summary",
+      label: "Summary",
+      ui: {
+        component: "textarea",
+      },
+    },
+  ] as TinaField[];
+}
+
 export function bio_cardsFields() {
   return [
     {
@@ -368,6 +393,11 @@ export function home_pageFields() {
           fields: about_sectionFields(),
           label: "About Section",
           name: "about",
+        },
+        {
+          fields: contact_sectionFields(),
+          label: "Contact Section",
+          name: "contact",
         },
       ],
     },
