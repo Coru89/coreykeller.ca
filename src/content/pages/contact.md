@@ -1,6 +1,8 @@
 ---
-title: 'Contact'
+permalink: /contact/index.html
+layout: contact.njk
+title: Contact
 _template: page
-permalink: '/contact/index.html'
-layout: 'contact.njk'
 ---
+
+hello
