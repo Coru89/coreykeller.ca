@@ -16,7 +16,7 @@ headerSummary: >-
 metaDesc: Websites
 socialImage: ''
 page_sections:
-  - template: cards-with-icon
+  - template: cards_with_icon
     backgroundColor: grey
     heading: Why Corey Keller?
     cards:
@@ -59,7 +59,7 @@ page_sections:
         icon: ''
     buttonText: ''
     buttonPath: ''
-  - template: steps-panel
+  - template: steps_panel
     heading: Our Process
     backgroundColor: light green
     steps:
@@ -93,7 +93,7 @@ page_sections:
           After your site is live, we don't have to say goodbye. Want to make
           some changes? Need help to review your analytics? Tweak an SEO
           stratgey? We are here to help!
-  - template: technologies-panel
+  - template: technologies_panel
     panelHeading: Technologies we ❤️
     technologies:
       - imagePath: images/wordpress-logotype-standard.png
@@ -125,7 +125,7 @@ page_sections:
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
           sequi nesciunt.
-  - template: portfolio-featured-panel-small
+  - template: portfolio_featured_panel_small
     title: Colonia Treuhand
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
@@ -138,7 +138,7 @@ page_sections:
     buttonText: Read More
     imageAlt: Colonia Treuhand Website
     imagePosition: ''
-  - template: call-to-action
+  - template: call_to_action
     text: Interested in working together?
     buttonText: Get in touch
     buttonPath: /contact

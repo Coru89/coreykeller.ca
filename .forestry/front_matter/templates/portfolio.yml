@@ -62,9 +62,9 @@ fields:
   type: blocks
   label: Page Sections
   template_types:
-  - portfolio-image-panel
-  - portfolio-content-panel
-  - call-to-action
+  - portfolio_image_panel
+  - portfolio_content_panel
+  - call_to_action
   config:
     min: 
     max: 

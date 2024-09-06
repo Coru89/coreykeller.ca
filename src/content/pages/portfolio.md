@@ -4,7 +4,7 @@ _template: page
 permalink: "/portfolio/index.html"
 layout: portfolio-landing.njk
 page_sections:
-- template: call-to-action
+- template: call_to_action
   text: Interested in working together?
   buttonText: Get in touch
   buttonPath: "/contact"

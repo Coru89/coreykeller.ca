@@ -9,7 +9,7 @@ headerSummary: >-
   will improve your digital prescense and help boost sales.</p>
 metaDesc: E-commerce solutions
 page_sections:
-  - template: technologies-panel
+  - template: technologies_panel
     panelHeading: Technologies we ❤️
     technologies:
       - imagePath: images/shopify.png
@@ -38,7 +38,7 @@ page_sections:
           for Wordpress, WooCommerce is a good option for existing sites built
           on Wordpress, or for a project which needs a full fledged content
           management system (CMS).
-  - template: portfolio-featured-panel-small
+  - template: portfolio_featured_panel_small
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
       tincidunt felis enim, sed commodo ante mollis ac. Quisque ornare enim nec
@@ -51,11 +51,11 @@ page_sections:
     image: images/vmg-home.png
     imagePosition: right
     imageAlt: Vanmade Gear
-  - template: call-to-action
+  - template: call_to_action
     text: Interested in working together?
     buttonText: Get in touch
     buttonPath: /contact
-  - template: cards-with-icon
+  - template: cards_with_icon
     backgroundColor: white
     heading: ''
     buttonText: ''

@@ -77,7 +77,7 @@ page_sections:
     imageAlt: placeholder
     buttonText: Let's chat
     buttonPath: /contact
-  - template: call-to-action
+  - template: call_to_action
     text: Interested in working together?
     buttonText: Get in touch
     buttonPath: /contact

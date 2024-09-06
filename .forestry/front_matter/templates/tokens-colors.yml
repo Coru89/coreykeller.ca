@@ -3,8 +3,8 @@ label: Design Tokens
 hide_body: true
 fields:
 - type: field_group
-  name: size-scale
-  label: size-scale
+  name: size_scale
+  label: size_scale
   fields:
   - type: text
     name: base
@@ -41,14 +41,14 @@ fields:
       color_format: Hex
     default: "#173854"
   - type: color
-    name: primary-shade
-    label: primary-shade
+    name: primary_shade
+    label: primary_shade
     config:
       color_format: Hex
     default: "#102538"
   - type: color
-    name: primary-glare
-    label: primary-glare
+    name: primary_glare
+    label: primary_glare
     config:
       color_format: Hex
     default: "#22547c"

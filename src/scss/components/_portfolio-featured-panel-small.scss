@@ -1,4 +1,4 @@
-.portfolio-featured-panel-small {
+.portfolio_featured_panel_small {
   padding: 1.5rem 0;
 
   @include media-query(md) {
@@ -18,7 +18,7 @@
     border-radius: 8px;
     padding: 2rem;
 
-    > .portfolio-featured-panel-small__heading {
+    > .portfolio_featured_panel_small__heading {
       padding-bottom: .5rem;
       
       @include media-query(md) {

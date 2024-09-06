@@ -13,15 +13,15 @@
 {% endif %}
 
 {% if props.imageLayout === 'Full width image' %}
-  {% set layoutClass = ' portfolio-image-panel--full-width' %}
+  {% set layoutClass = ' portfolio_image_panel--full-width' %}
 {% elseif props.imageLayout === '2 Desktop' %}
-  {% set layoutClass = ' portfolio-image-panel--2-desktop' %}
+  {% set layoutClass = ' portfolio_image_panel--2-desktop' %}
 {% elseif props.imageLayout === '4 Mobile' %}
-  {% set layoutClass = ' portfolio-image-panel--4-mobile' %}
+  {% set layoutClass = ' portfolio_image_panel--4-mobile' %}
 {% endif %}
 
-<section class="portfolio-image-panel" style="background-color: {{colorHexPanel}};">
-  <div class="portfolio-image-panel__inner{{layoutClass}}">
+<section class="portfolio_image_panel" style="background-color: {{colorHexPanel}};">
+  <div class="portfolio_image_panel__inner{{layoutClass}}">
     {% if props.imageLayout === 'Full width image' and props.desktopImageURL1.length %}
       {% image props.desktopImageURL1, props.desktopImageAlt1, null, "lazy", "100vw", ['400', '500', '600', '700', '800', '900', '1000', '1100', '1200', '1300', '2000'] %}
     {% elseif props.imageLayout === '2 Desktop' %}

@@ -1,6 +1,6 @@
 {% for block in page_sections_portfolio %}
-    {% if block.template === 'portfolio-image-panel' %}
-        {{ component('portfolio-image-panel', {
+    {% if block.template === 'portfolio_image_panel' %}
+        {{ component('portfolio_image_panel', {
             imageLayout: block.imageLayout,
             mobileImageURL1: block.mobileImageURL1,
             mobileImageAlt1: block.mobileImageAlt1,
@@ -22,8 +22,8 @@
             isBottom: block.isBottom
         }) }}
 
-    {% elseif block.template === 'portfolio-content-panel' %}
-        {{ component('portfolio-content-panel', {
+    {% elseif block.template === 'portfolio_content_panel' %}
+        {{ component('portfolio_content_panel', {
             title: block.title,
             summary: block.summary,
             showMeta: block.showMeta,
@@ -35,8 +35,8 @@
             category: category,
             expertise: expertise
         }) }}
-    {% elseif block.template === 'call-to-action' %}
-        {{ component('call-to-action', {
+    {% elseif block.template === 'call_to_action' %}
+        {{ component('call_to_action', {
             text: block.text,
             buttonText: block.buttonText,
             buttonPath: block.buttonPath

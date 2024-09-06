@@ -7,12 +7,12 @@ fields:
   label: Page Sections
   template_types:
   - image_text_panel
-  - cards-with-icon
-  - text-area
-  - image-with-caption
-  - call-to-action
-  - service-panel
-  - portfolio-featured-panel-small
+  - cards_with_icon
+  - text_area
+  - image_with_caption
+  - call_to_action
+  - service_panel
+  - portfolio_featured_panel_small
   config:
     min: 
     max: 

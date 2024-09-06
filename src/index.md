@@ -78,7 +78,7 @@ page_sections:
         imagePosition: left
         backgroundColor: AA6373
         isBottom: true
-    template: featured-work
+    template: featured_work
   - title: Hit Me Up!
     titleSecondary: Contact
     summary: >-

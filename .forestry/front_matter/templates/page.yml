@@ -58,16 +58,16 @@ fields:
   type: blocks
   label: Page Sections
   template_types:
-  - text-area
+  - text_area
   - image_text_panel
-  - image-with-caption
-  - call-to-action
-  - cards-with-icon
-  - service-panel
+  - image_with_caption
+  - call_to_action
+  - cards_with_icon
+  - service_panel
   - blockquote
-  - portfolio-featured-panel-small
-  - steps-panel
-  - technologies-panel
+  - portfolio_featured_panel_small
+  - steps_panel
+  - technologies_panel
   config:
     min: 
     max: 

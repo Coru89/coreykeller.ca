@@ -18,6 +18,6 @@ $metrics: (
    'panel-container': 68rem
 );
 $colors: map-get($tokens, 'colors');
-$font-size-scale: map-get($tokens, 'font-size-scale');
+$font-size_scale: map-get($tokens, 'font-size_scale');
 $fonts: map-get($tokens, 'fonts');
-$spacing-size-scale: map-get($tokens, 'spacing-size-scale');
+$spacing-size_scale: map-get($tokens, 'spacing-size_scale');

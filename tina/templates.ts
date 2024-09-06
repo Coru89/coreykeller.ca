@@ -339,44 +339,37 @@ export function home_pageFields() {
         {
           fields: image_text_panelFields(),
           label: "Image Text Panel",
-          name: "image_text_panel",
-          nameOverride: "image_text_panel",
+          name: "image_text_panel"
         },
         {
           fields: cards_with_iconFields(),
           label: "Cards with icon",
-          name: "cards_with_icon",
-          nameOverride: "cards-with-icon",
+          name: "cards_with_icon"
         },
         {
           fields: text_areaFields(),
           label: "Text Area",
-          name: "text_area",
-          nameOverride: "text-area",
+          name: "text_area"
         },
         {
           fields: image_with_captionFields(),
           label: "Image with caption",
-          name: "image_with_caption",
-          nameOverride: "image-with-caption",
+          name: "image_with_caption"
         },
         {
           fields: call_to_actionFields(),
           label: "Call to action",
           name: "call_to_action",
-          nameOverride: "call-to-action",
         },
         {
           fields: service_panelFields(),
           label: "Service Panel",
-          name: "service_panel",
-          nameOverride: "service-panel",
+          name: "service_panel"
         },
         {
           fields: portfolio_featured_panel_smallFields(),
           label: "Portfolio Featured Panel Small",
-          name: "portfolio_featured_panel_small",
-          nameOverride: "portfolio-featured-panel-small",
+          name: "portfolio_featured_panel_small"
         },
         {
           fields: skills_sectionFields(),
@@ -386,8 +379,7 @@ export function home_pageFields() {
         {
           fields: featured_work_panelFields(),
           label: "Featured Work Panel",
-          name: "featured_work",
-          nameOverride: "featured-work",
+          name: "featured_work"
         },
         {
           fields: about_sectionFields(),
@@ -575,38 +567,32 @@ export function pageFields() {
         {
           fields: text_areaFields(),
           label: "Text Area",
-          name: "text_area",
-          nameOverride: "text-area",
+          name: "text_area"
         },
         {
           fields: image_text_panelFields(),
           label: "Image Text Panel",
-          name: "image_text_panel",
-          nameOverride: "image_text_panel",
+          name: "image_text_panel"
         },
         {
           fields: image_with_captionFields(),
           label: "Image with caption",
-          name: "image_with_caption",
-          nameOverride: "image-with-caption",
+          name: "image_with_caption"
         },
         {
           fields: call_to_actionFields(),
           label: "Call to action",
-          name: "call_to_action",
-          nameOverride: "call-to-action",
+          name: "call_to_action"
         },
         {
           fields: cards_with_iconFields(),
           label: "Cards with icon",
-          name: "cards_with_icon",
-          nameOverride: "cards-with-icon",
+          name: "cards_with_icon"
         },
         {
           fields: service_panelFields(),
           label: "Service Panel",
-          name: "service_panel",
-          nameOverride: "service-panel",
+          name: "service_panel"
         },
         {
           fields: blockquoteFields(),
@@ -616,20 +602,17 @@ export function pageFields() {
         {
           fields: portfolio_featured_panel_smallFields(),
           label: "Portfolio Featured Panel Small",
-          name: "portfolio_featured_panel_small",
-          nameOverride: "portfolio-featured-panel-small",
+          name: "portfolio_featured_panel_small"
         },
         {
           fields: stepsFields(),
           label: "Steps",
-          name: "steps_panel",
-          nameOverride: "steps-panel",
+          name: "steps_panel"
         },
         {
           fields: technologies_panelFields(),
           label: "Technologies Panel",
-          name: "technologies_panel",
-          nameOverride: "technologies-panel",
+          name: "technologies_panel"
         },
       ],
     },
@@ -951,20 +934,17 @@ export function portfolio_itemFields() {
         {
           fields: portfolio_image_panelFields(),
           label: "Portfolio Image Panel",
-          name: "portfolio_image_panel",
-          nameOverride: "portfolio-image-panel",
+          name: "portfolio_image_panel"
         },
         {
           fields: portfolio_content_panelFields(),
           label: "Portfolio Content Panel",
-          name: "portfolio_content_panel",
-          nameOverride: "portfolio-content-panel",
+          name: "portfolio_content_panel"
         },
         {
           fields: call_to_actionFields(),
           label: "Call to action",
-          name: "call_to_action",
-          nameOverride: "call-to-action",
+          name: "call_to_action"
         },
       ],
     },
@@ -1184,8 +1164,7 @@ export function design_tokensFields() {
     {
       type: "object",
       name: "size_scale",
-      nameOverride: "size-scale",
-      label: "size-scale",
+      label: "size_scale",
       fields: [
         {
           type: "string",
@@ -1245,8 +1224,7 @@ export function design_tokensFields() {
         {
           type: "string",
           name: "primary_shade",
-          nameOverride: "primary-shade",
-          label: "primary-shade",
+          label: "primary_shade",
           ui: {
             component: "color",
           },
@@ -1254,8 +1232,7 @@ export function design_tokensFields() {
         {
           type: "string",
           name: "primary_glare",
-          nameOverride: "primary-glare",
-          label: "primary-glare",
+          label: "primary_glare",
           ui: {
             component: "color",
           },
