@@ -59,7 +59,7 @@ fields:
   label: Page Sections
   template_types:
   - text-area
-  - image-text-panel
+  - image_text_panel
   - image-with-caption
   - call-to-action
   - cards-with-icon

@@ -11,7 +11,7 @@ headerSummary: >-
   sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
   Neque porro quisquam est, qui dolorem.
 page_sections:
-  - template: image-text-panel
+  - template: image_text_panel
     backgroundColor: grey
     imageURL: images/placeholder-image.jpg
     imagePosition: left
@@ -29,7 +29,7 @@ page_sections:
       and take a right-tool-for-the-job approach. Our websites are optimized for
       page load speed, follow best practices and achieve pefect technical SEO
       scores in Google Lighthouse.
-  - template: image-text-panel
+  - template: image_text_panel
     backgroundColor: white
     title: Ecommerce
     summary: >-
@@ -44,7 +44,7 @@ page_sections:
     imageAlt: placeholder
     buttonText: Learn more
     buttonPath: /services/ecommerce
-  - template: image-text-panel
+  - template: image_text_panel
     backgroundColor: grey
     title: Support and Evolve
     summary: >-
@@ -61,7 +61,7 @@ page_sections:
     imageAlt: placeholder
     buttonText: ''
     buttonPath: ''
-  - template: image-text-panel
+  - template: image_text_panel
     backgroundColor: white
     title: Outsource
     imagePosition: right

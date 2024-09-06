@@ -340,7 +340,7 @@ export function home_pageFields() {
           fields: image_text_panelFields(),
           label: "Image Text Panel",
           name: "image_text_panel",
-          nameOverride: "image-text-panel",
+          nameOverride: "image_text_panel",
         },
         {
           fields: cards_with_iconFields(),
@@ -582,7 +582,7 @@ export function pageFields() {
           fields: image_text_panelFields(),
           label: "Image Text Panel",
           name: "image_text_panel",
-          nameOverride: "image-text-panel",
+          nameOverride: "image_text_panel",
         },
         {
           fields: image_with_captionFields(),
