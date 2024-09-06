@@ -2,28 +2,28 @@ import { defineConfig } from "tinacms";
 
 import { about_sectionFields } from "./templates";
 import { contact_sectionFields } from "./templates";
-import { bio_cardsFields } from "./templates";
-import { blockquoteFields } from "./templates";
+// import { bio_cardsFields } from "./templates";
+// import { blockquoteFields } from "./templates";
 import { call_to_actionFields } from "./templates";
 import { cards_with_iconFields } from "./templates";
 import { featured_work_panelFields } from "./templates";
-import { site_footFields } from "./templates";
-import { home_pageFields } from "./templates";
+// import { site_footFields } from "./templates";
+// import { home_pageFields } from "./templates";
 import { image_text_panelFields } from "./templates";
 import { image_with_captionFields } from "./templates";
 import { pageFields } from "./templates";
-import { portfolio_content_panelFields } from "./templates";
+// import { portfolio_content_panelFields } from "./templates";
 import { portfolio_featured_panel_smallFields } from "./templates";
-import { portfolio_featured_panelFields } from "./templates";
-import { portfolio_image_panelFields } from "./templates";
+// import { portfolio_featured_panelFields } from "./templates";
+// import { portfolio_image_panelFields } from "./templates";
 import { portfolio_itemFields } from "./templates";
 import { postFields } from "./templates";
 import { service_panelFields } from "./templates";
 import { skills_sectionFields } from "./templates";
-import { stepsFields } from "./templates";
-import { technologies_panelFields } from "./templates";
+// import { stepsFields } from "./templates";
+// import { technologies_panelFields } from "./templates";
 import { text_areaFields } from "./templates";
-import { design_tokensFields } from "./templates";
+// import { design_tokensFields } from "./templates";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
