@@ -61,7 +61,6 @@ export default defineConfig({
         path: "src/content/pages",
         match: {
           include: "**/*",
-          exclude: "**/*",
         },
         templates: [
           {
