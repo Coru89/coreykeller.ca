@@ -1083,7 +1083,7 @@ var config_default = defineConfig({
               {
                 fields: contact_sectionFields(),
                 label: "Contact Section",
-                name: "Contact"
+                name: "contact"
               }
             ]
           },

@@ -194,7 +194,7 @@ export default defineConfig({
               },
               {
                 fields: contact_sectionFields(),
-                label: "Contact Section",
+                label: "featured_work Section",
                 name: "contact",
               },
             ],

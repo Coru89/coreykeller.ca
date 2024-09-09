@@ -30,6 +30,13 @@
             titleSecondary: block.titleSecondary,
             items: block.items
         }) }}
+
+    {% elseif block.template === 'contact' %}
+        {{ component('contact', {
+            title: block.title,
+            titleSecondary: block.titleSecondary,
+            summary: block.summary
+        }) }}
     
     {% endif %}
 {% endfor %}

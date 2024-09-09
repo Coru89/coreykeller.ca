@@ -1,0 +1,48 @@
+ <section class="contact-panel">
+    <div class="contact-panel__divider">
+        <svg width="1680" height="120" viewBox="0 0 1680 120" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1242.5 92L342 30L0 46.5V120H1679V30L1242.5 92Z" fill="#FEF2D7"/>
+        </svg>
+    </div>
+    <div class="contact-panel__inner">
+        <div class="contact-panel__row">
+            <div class="contact-panel__column">
+
+                <h2>{{ props.title }}</h2>
+                <h3 class="section__heading">{{ props.titleSecondary }}</h3>
+                <p class="comtact-panel__summary">
+                    {{ props.summary }}
+                </p>
+            </div>
+
+            <div class="contact-panel__column">
+                {{ component('contact_form') }}
+            </div>
+        </div>
+
+    </div>
+ </section>
+ 
+
+  <style>
+    .contact-panel__divider {
+      position: absolute;
+      top: -120px;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .contact-panel__divider svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 120px;
+      transform: rotateY(180deg);
+    }
+
+    .scontact-panel__divider .shape-fill {
+      fill: #ECD8D5;
+    }
+  </style>

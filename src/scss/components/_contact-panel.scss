@@ -1,0 +1,39 @@
+.contact-panel {
+    position: relative;
+    background-color: var(--color-sand);
+    padding: calc(2rem + 120px) 0;
+
+    @include media-query(lg) {
+        padding: calc(3rem + 120px) 0;
+      }
+
+    &__inner {
+        @include panel-container;
+        // padding: 1.5rem 0;
+    }
+
+    &__row {
+        display: flex;
+
+        @include media-query(md) {
+            flex-direction: row;
+            gap: 4rem;
+        }
+    }
+
+    &__column {
+
+        @include media-query(md) {
+            &:first-of-type {
+                width: 60%;
+            }
+
+            &:last-of-type {
+                width: 40%;
+            }
+        }
+
+    }
+}
+  
+  

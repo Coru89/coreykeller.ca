@@ -87,7 +87,7 @@ page_sections:
       for your business. Need a new site or a refresh? Work with us to create a
       modern website that will strengthen your brand, credibility,
       professionalism and serve as a hub of your online prescense.
-    template: Contact
+    template: contact
 ---
 
 <!-- do not delete -->
