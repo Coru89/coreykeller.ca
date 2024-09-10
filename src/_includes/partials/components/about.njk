@@ -20,17 +20,15 @@
 <section class="about">
   <div class="about__divider">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>a
     </svg>
   </div>
   <div class="about__inner" style="background-color: {{colorHexCard}};">
     <div class="about__row">
-      <h2>{{ props.title }}</h2>
-      <h3 class="section__heading">{{ props.titleSecondary }}</h3>
+      <h2 data-sal="fade" data-sal-delay="200">{{ props.title }}</h2>
+      <h3 data-sal="slide-up" data-sal-delay="400" class="section__heading">{{ props.titleSecondary }}</h3>
     </div>
-    <div class="about__row">
-
-
+    <div data-sal="fade" data-sal-delay="700" class="about__row">
         <div class="about__image{% if props.imagePosition === 'right' %} about__image--reverse{% endif %}">
           {% if props.imageURL.length %}
             {% image props.imageURL,
@@ -38,10 +36,9 @@
             null,
             "lazy",
             "100vw",
-            ['300', '400', '576', '600', '730'] %}
+            ['300', '400', '560'] %}
           {% endif %}
         </div>
-
 
         <div class="about__text{% if props.imagePosition === 'right' %} about__text--reverse{% endif %}">
           <h4 class="section__heading">{{ props.titleSummary }}</h4>

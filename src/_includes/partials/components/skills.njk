@@ -8,11 +8,21 @@
   </svg>
   <div class="skills__inner">
       <div class="skills__row">
-        <h2>{{ props.title }}</h2>
+        <h2 data-sal="fade">{{ props.title }}</h2>
         <h3 class="section__heading">{{ props.titleSecondary }}</h3>
         <p class="skills__summary">{{ props.summary | safe }}</p>
     </div>  
     <div class="skills__row">
+      <ul class="skills__items">
+        {% for item in props.items %} 
+          <li class="skills__item">
+            {% if item.image.length %}
+              {% image item.image, "hello", "skills__image", "lazy", "100vw", ['60', '80', '100', '120'] %}
+            {% endif %}
+            <div class="skills__item-title">{{ item.label | safe }}</div>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </section>

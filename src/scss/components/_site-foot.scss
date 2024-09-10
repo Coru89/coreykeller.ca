@@ -1,13 +1,14 @@
 .site-foot {
   // Reverse whatever the theme colors are
-  background: var(--color-bg-glare);
-  border-top: 1px solid var(--color-stroke);
+  background-color: var(--color-pink-light);
+  // border-top: 1px solid var(--color-stroke);
   color: var(--color-text);
-  padding: 3rem 0 0 0;
+  padding: .75rem 0;
+  line-height: auto;
 
-  @include media-query(md) {
-    padding: 9rem 0 0 0;
-  }
+  // @include media-query(md) {
+  //   padding: 9rem 0 0 0;
+  // }
 
   &__wrapper {
     @include panel-container;
@@ -16,20 +17,16 @@
   &__row {
     text-align: center;
 
-    &:last-of-type {
-      border-top: 1px solid var(--color-theme-primary);
-      padding: 1rem 0;
-    }
+    // &:last-of-type {
+    //   border-top: 1px solid var(--color-theme-primary);
+    //   padding: 1rem 0;
+    // }
 
     @include media-query(md) {
-      align-items: flex-start;
+      align-items: center;
       display: flex;
       justify-content: space-between;
       text-align: left;
-
-      &:first-of-type {
-        padding-bottom: 6rem;
-      }
     }
   }
 

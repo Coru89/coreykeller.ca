@@ -61,7 +61,7 @@
       display: flex;
       padding: 0;
       position: static;
-      justify-content: flex-end;
+      justify-content: space-between;
     }
   }
 
@@ -315,12 +315,6 @@
     background-color: var(--color-green-dark);
     text-align: center;
     width: 100%;
-
-    svg {
-      float: right;
-      position: relative;
-      top: 3px;
-    }
 
     @include media-query(sm) {
       text-align: left;

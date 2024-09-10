@@ -17,8 +17,8 @@
   <button type="submit" class="button button--reverse">{{ text }}</button>
 {% endmacro %}
 
-{% macro button_link( text, link, arrow ) %}
-  <a class="button{% if arrow === true %} button--arrow{% endif %}" href="{{ link }}">{{ text }}
+{% macro button_link( text, link, arrow, animate) %}
+  <a {% if animate %} data-sal="{{ animate }}" {% endif %} class="button{% if arrow === true %} button--arrow{% endif %}" href="{{ link }}">{{ text }}
     {% if arrow === true %}
       {% svg "arrow" %}
     {% endif %}

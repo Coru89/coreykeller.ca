@@ -1,7 +1,7 @@
 .contact-panel {
     position: relative;
     background-color: var(--color-sand);
-    padding: calc(2rem + 120px) 0;
+    padding: 2rem 0 4rem;
 
     @include media-query(lg) {
         padding: calc(3rem + 120px) 0;
@@ -14,15 +14,19 @@
 
     &__row {
         display: flex;
+        flex-direction: column;
 
         @include media-query(md) {
             flex-direction: row;
             gap: 4rem;
         }
+
+        @include media-query(lg) {
+            gap: 6rem;
+        }
     }
 
     &__column {
-
         @include media-query(md) {
             &:first-of-type {
                 width: 60%;
@@ -33,6 +37,32 @@
             }
         }
 
+    }
+
+    &__summary {
+        line-height: 1.65;
+    }
+
+    &__leaf {
+        
+        display: block;
+        position: absolute;
+        top: -130px;
+        right: 10%;
+        z-index: 1;
+        width: 180px;
+    
+        @include media-query(md) {
+          left: 25%;
+          top: -130px;
+          width: 200px;
+        }
+    
+        @include media-query(xxl) {
+          left: 25%;
+          top: -180px;
+          width: 230px;
+        }
     }
 }
   

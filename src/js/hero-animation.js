@@ -1,6 +1,6 @@
 const header = document.querySelector("#header");
 const cursor = document.querySelector("#cursor");
-const texts = [ "Hey there, bud.", "What's up pal?", "How's it going?" ];
+const texts = ["Hey there, bud.", "What's up pal?", "How's it going?"];
 
 let index = 0;
 let i = 0;
@@ -28,4 +28,5 @@ const backspace = () => {
   }
 };
 
-backspace();
+// Delay the start of the animation by 1 second (1000 milliseconds)
+setTimeout(backspace, 1200);

@@ -1,24 +1,23 @@
-const { parallel, watch } = require('gulp');
-
-// Pull in each task
-// const fonts = require('./gulp-tasks/fonts.js');
+const { parallel, watch, series } = require('gulp');
+const webpack = require('webpack');
+const webpackConfig = require('./webpack.config.js');
 const sass = require('./gulp-tasks/sass.js');
-//const images = require('./gulp-tasks/images.js');
-//const js = require('./gulp-tasks/js.js');
 
-// Set each directory and contents that we want to watch and
-// assign the relevant task. `ignoreInitial` set to true will
-// prevent the task being run when we run `gulp watch`, but it
-// will run when a file changes.
-const watcher = () => {
-  watch('./src/scss/**/*.scss', sass);
-  //watch('./src/images/*', { ignoreInitial: true }, images);
-  //watch('./src/js/*', { ignoreInitial: true }, js);
+const js = (cb) => {
+  webpack(webpackConfig, (err, stats) => {
+    if (err) console.log('Webpack', err);
+    console.log(stats.toString());
+    cb();
+  });
 };
 
-// The default (if someone just runs `gulp`) is to run each task in parrallel
-exports.default = parallel(sass);
+const watcher = () => {
+  watch('./src/scss/**/*.scss', sass);
+  watch('./src/js/**/*.js', js);
+};
 
-// This is our watcher task that instructs gulp to watch directories and
-// act accordingly
+// Default task: run both SASS and JS
+exports.default = series(parallel(sass, js));
+
+// Watcher task
 exports.watch = watcher;

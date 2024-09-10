@@ -7,9 +7,9 @@
     </svg>
   </div>
   <div class="work-panel__inner{% if props.imagePosition === 'right' %} work-panel__inner--reverse{% endif %}" style="background-color: {{colorHexCard}};">
-    <div class="work-panel__row">
-        <h2>{{ props.title }}</h2>
-        <h3 class="section__heading">{{ props.titleSecondary }}</h3>
+    <div class="work-panel__row work-panel__heading-wrapper">
+        {# <h2>{{ props.title }}</h2> #}
+        <h3 class="">{{ props.titleSecondary }}</h3>
     </div> 
     <div class="work-panel__row">
       {% for item in props.items %} 
@@ -20,9 +20,9 @@
             {% endif %}
           </div>
           <div class="work-panel__text{% if item.imagePosition === 'right' %} work-panel__text--reverse{% endif %}">
-            <h2 class="work-panel__heading">Featured Work</h2>
+            <h2 class="work-panel__heading">Featured Project</h2>
             <h3 class="work-panel__text-title">{{ item.title }}</h3>
-            <div class="work-panel__text-summary">{{item.summary | safe }}</div>
+            <div class="work-panel__text-summary">{{ item.summary | safe }}</div>
               {% if item.buttonText.length and item.buttonPath.length %}
                 {{ arrow_link_large(item.buttonText, item.buttonPath) }}
               {% endif %}

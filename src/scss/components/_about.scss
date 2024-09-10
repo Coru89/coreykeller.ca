@@ -6,7 +6,7 @@
   justify-content: center;
 
   @include media-query(lg) {
-    padding: calc(3rem + 120px) 0;
+    padding: calc(1rem + 120px) 0;
   }
 
   &__inner {
@@ -34,6 +34,8 @@
 
   &__image {
     padding-bottom: 2rem;
+    max-width: 300px;
+    margin: 0 auto;
 
     @include media-query(lg) {
       padding-bottom: 0;

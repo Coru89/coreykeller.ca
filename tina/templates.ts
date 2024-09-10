@@ -1073,6 +1073,32 @@ export function skills_sectionFields() {
       label: "Background Color",
       options: ["white", "green", "grey", "light green"],
     },
+    {
+      type: "object",
+      name: "items",
+      label: "Items",
+      list: true,
+      fields: [
+        {
+          type: "image",
+          name: "image",
+          label: "Image"
+        },
+        {
+          type: "string",
+          name: "imageSVG",
+          label: "Image SVG",
+          ui: {
+            component: "textarea",
+          },
+        },
+        {
+          type: "string",
+          name: "label",
+          label: "Label"
+        },
+      ],
+    },
   ] as TinaField[];
 }
 export function stepsFields() {

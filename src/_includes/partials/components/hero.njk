@@ -11,7 +11,7 @@
 				{% endif %}
 			</div>
 
-			<div class="hero__heading-row">
+			<div data-sal-delay="400" class="hero__heading-row">
 				{% if props.heroHeading3 %}
 					<h1 class="hero__heading">{{ props.heroHeading3 | safe }}</h1>
 				{% endif %}
@@ -19,6 +19,16 @@
 					<h1 class="hero__heading hero__heading-emphasis">{{ props.heroHeading4 | safe }}</h1>
 				{% endif %}
 			</div>
+
+			{# {{ button_link("Get in touch", "#contact", true, "fade") }} #}
+
+			{# <div data-sal="slide-left" data-sal-delay="600" >
+				<a  class="button button--arrow" href="{{ link }}">Get it touch
+					{% svg "arrow" %}
+				</a>
+			</div> #}
+
+
 		</div>
 		{# {% if props.heroServices %}
 			<span class="hero__services-label">Competencies:</span>
@@ -43,4 +53,5 @@
 			{% endif %}
 		</div> #}
 	</div>
+	{% image "images/leaf-tropical-clean.png", "", "hero__leaf", "lazy", "(max-width: 87.5rem) 150px, 232px", [150, 200], "slide-left", 300 %}
 </header>

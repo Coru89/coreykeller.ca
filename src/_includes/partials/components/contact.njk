@@ -1,4 +1,5 @@
- <section class="contact-panel">
+ <section id="contact" class="contact-panel">
+  	{% image "images/maple-leaf.png", "", "contact-panel__leaf", "lazy", "(max-width: 87.5rem) 150px, 300px", [150, 200, 300] %}
     <div class="contact-panel__divider">
         <svg width="1680" height="120" viewBox="0 0 1680 120" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1242.5 92L342 30L0 46.5V120H1679V30L1242.5 92Z" fill="#FEF2D7"/>
@@ -10,7 +11,7 @@
 
                 <h2>{{ props.title }}</h2>
                 <h3 class="section__heading">{{ props.titleSecondary }}</h3>
-                <p class="comtact-panel__summary">
+                <p class="contact-panel__summary">
                     {{ props.summary }}
                 </p>
             </div>

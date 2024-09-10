@@ -4,6 +4,10 @@
 @import 'mixins/reference';
 
 @import 'functions/get-functions';
+
+// for scroll animations
+@import '../../node_modules/sal.js/dist/sal';
+
 @import 'theme';
 
 // Local dependencies

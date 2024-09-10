@@ -2,6 +2,7 @@
   background-color: var(--color-green-lighter);
   padding: calc(2rem + 120px) 0;
   position: relative;
+  
 
   @include media-query(lg) {
     padding: calc(3rem + 120px) 0;
@@ -22,8 +23,6 @@
 
   &__inner {
     @include panel-container;
-    padding: 1.5rem 0;
-    //text-align: center;
   
   }
 
@@ -38,8 +37,12 @@
   }
 
   &__heading {
-    margin-bottom: 3.5rem;
     text-transform: uppercase;
+
+
+    &-wrapper {
+      text-align: center;
+    }
   }
 
   &__image {

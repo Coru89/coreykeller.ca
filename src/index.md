@@ -7,31 +7,32 @@ portfolioHeading: Recent Work
 servicesHeading: Expertise
 heroHeading: 'Hey there, bud.'
 heroHeading2: I'm Corey!
-heroHeading3: 'A '
-heroHeading4: Front-end Developer.
+heroHeading3: A Frontend Developer.
+heroHeading4: null
 heroImage: /images/night-sky-fancy.png
-metaDesc: Update me later
-socialImage: ''
-layout: home
 page_sections:
   - title: About
     titleSecondary: Meet Corey
     titleSummary: 'A Front-end Developer building lightning-fast, user-friendly websites.'
-    summary: >-
-      <p>I am front-end developer with a background in enterprise IT consulting.
-      My passion for web development stems from the creative challenges it
-      presents, and I find great fulfillment in solving complex problems through
-      coding. After a near decade working in the corporate world, I made the
-      decision to relocate to Chiang Mai, Thailand, where I now work as a
-      freelancer. I specialize in helping small and medium-sized businesses
-      build and maintain their online presence, leveraging my expertise in
-      platforms such as Shopify, WordPress, and Craft CMS.</p>
+    summary: >+
+      <p>I’m an experienced Front-End Developer with over 12 years in the
+      industry, including nearly a decade in enterprise IT consulting before
+      transitioning to freelance work, which I’ve been doing for the past 4
+      years. I specialize in building lightning-fast, pixel-perfect, responsive
+      websites from Figma mockups, with a focus on Shopify, WordPress, and Craft
+      CMS.</p>
 
-      <p>When I'm not coding, I enjoy going on off-road adventures on my
-      motorcycle in northern Thailand. I find the physical challenge of
-      navigating new trails to be a great balance to the mental demands of web
-      development. I also have an interest in trying new dishes and exploring
-      different flavors during my travels.</p>
+
+      <p>Web development has always been a passion of mine, driven by the
+      creative challenges and problem-solving it offers. I'm confident I can
+      knock any project out of the park in exchange for a glowing review.</p>
+
+
+
+
+
+
+
     imageURL: /images/portrait-corey.png
     imagePosition: left
     imageAlt: Corey Keller
@@ -50,9 +51,19 @@ page_sections:
       my favorite tools
     buttonText: Read More
     buttonPath: /portfolio/vanmadegear
+    items:
+      - image: /images/jamstack.png
+        label: Jamstack
+      - image: /images/wordpress.svg
+        label: Wordpress
+      - image: /images/shopify.svg
+        label: Shopify
+      - image: /images/craft cms.svg
+        imageSVG: ''
+        label: Craft CMS
     template: skills
   - title: Work
-    titleSecondary: What I've done
+    titleSecondary: Recent Work
     items:
       - title: Vanmade Gear
         summary: >-
@@ -66,7 +77,7 @@ page_sections:
         imagePosition: right
         backgroundColor: EE964B
         isBottom: false
-      - title: Colonia Treuhand Test
+      - title: Colonia Treuhand
         summary: >-
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
@@ -88,6 +99,9 @@ page_sections:
       modern website that will strengthen your brand, credibility,
       professionalism and serve as a hub of your online prescense.
     template: contact
+metaDesc: Update me later
+socialImage: ''
+layout: home
 ---
 
 <!-- do not delete -->

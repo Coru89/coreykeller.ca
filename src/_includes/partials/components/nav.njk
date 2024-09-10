@@ -7,6 +7,9 @@
       {% svg "close" %}
     </button>
     <div class="nav__wrapper">
+      {# logo #}
+      {% svg "ck-logo-2" %}
+
       <ul class="nav__list">
         {% for item in navigation.items %}
           {% set relAttribute = '' %}
@@ -21,58 +24,21 @@
             {% set currentAttribute = ' aria-current="page"' %}
             {% set currentClass = 'nav__item--active' %}
           {% endif %}
-          <li class="nav__item {{ currentClass | safe }}">
-          {# <li class="nav__item{% if item.items %} nav__item--has-level-2{% endif %} {{ currentClass | safe }}"> #}
+          {# <li class="nav__item {{ currentClass | safe }}">
             <a class="nav__item-link{% if page.url == ('/') %} nav__item-link--isHome{% endif %}" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span class="nav__item-link-text">{{ item.text }}</span></a>
-            {# <a class="nav__item-link nav__item-link--isHome" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span class="nav__item-link-text">{{ item.text }}</span>{% if item.items %}{% svg "chevron" %}{% endif %}</a> #}
-            {# {% if item.items %}
-              <ul class="nav__sublist">
-                {% for item in item.items %}
-                  {% set relAttribute = '' %}
-                  {% set currentAttribute = '' %}
-                  {% set currentClass = '' %}
-
-                  {% if item.rel %}
-                    {% set relAttribute = ' rel="' + item.rel + '"' %}
-                  {% endif %}
-
-                  {% if page.url == (item.url + '/') %}
-                    {% set currentAttribute = ' aria-current="page"' %}
-                    {% set currentClass = 'nav__item--active' %}
-                  {% endif %}
-
-                  <li class="nav__item nav__item-level-2 {{ currentClass | safe }}">
-                    <a class="nav__item-link nav__item-link-level-2" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>
-                      <span class="nav__item-link-text">{{ item.text }}</span>
-                    </a>
-                    {% if item.items %}
-                      <ul class="nav__list-level-3">
-                        {% for item in item.items %}
-                          <li class="nav__item nav__item-level-3 {{ currentClass | safe }}">
-                            <a class="nav__item-link nav__item-link-level-3" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>
-                              <span class="nav__item-link-text">{{ item.text }}</span>
-                            </a>
-                          </li>
-                        {% endfor %}
-                      </ul>
-                    {% endif %}
-                  </li>
-                {% endfor %}
-              </ul>
-            {% endif %} #}
-          </li>
+          </li> #}
         {% endfor %}
         {% from "macros/macros.njk" import button_link %}
       </ul>
-        <div class="nav__secondary">
-          <div class="nav__contact">
-          {{ button_link("Get in touch", "#contact", true) }}
-          </div>
-          {# <div class="nav__theme">
-            <theme-toggle></theme-toggle>
-          </div> #}
-          {# {% include "partials/components/social-icons.njk" %} #}
+      <div class="nav__secondary">
+        <div class="nav__contact">
+        {{ button_link("Get in touch", "#contact", true) }}
         </div>
+        {# <div class="nav__theme">
+          <theme-toggle></theme-toggle>
+        </div> #}
+        {# {% include "partials/components/social-icons.njk" %} #}
+      </div>
     </div>
   </nav>
 {% endif %}

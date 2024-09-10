@@ -832,6 +832,32 @@ function skills_sectionFields() {
       name: "backgroundColor",
       label: "Background Color",
       options: ["white", "green", "grey", "light green"]
+    },
+    {
+      type: "object",
+      name: "items",
+      label: "Items",
+      list: true,
+      fields: [
+        {
+          type: "image",
+          name: "image",
+          label: "Image"
+        },
+        {
+          type: "string",
+          name: "imageSVG",
+          label: "Image SVG",
+          ui: {
+            component: "textarea"
+          }
+        },
+        {
+          type: "string",
+          name: "label",
+          label: "Label"
+        }
+      ]
     }
   ];
 }
@@ -936,7 +962,7 @@ var config_default = defineConfig({
   media: {
     tina: {
       mediaRoot: "images",
-      publicFolder: "dist"
+      publicFolder: "src"
     }
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/

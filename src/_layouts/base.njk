@@ -24,9 +24,12 @@
   {% block foot %}
   {% endblock %}
   
-  <script type="module" src="/js/hero-animation.js" async defer></script>
+  {# <script type="module" src="/js/hero-animation.js" async defer></script>
+  <script type="module" src="/js/scroll-animation.js" async defer></script>
   <script type="module" src="/js/nav.js" async defer></script>
   <script type="module" src="/js/theme-toggle.js" async defer></script>
+    #}
+  <script type="module" src="/js/bundle.js" defer></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
