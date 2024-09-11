@@ -28,7 +28,7 @@
       <h2 data-sal="fade" data-sal-delay="200">{{ props.title }}</h2>
       <h3 data-sal="slide-up" data-sal-delay="400" class="section__heading">{{ props.titleSecondary }}</h3>
     </div>
-    <div data-sal="fade" data-sal-delay="700" class="about__row">
+    <div class="about__row">
         <div class="about__image{% if props.imagePosition === 'right' %} about__image--reverse{% endif %}">
           {% if props.imageURL.length %}
             {% image props.imageURL,

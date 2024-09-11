@@ -11,15 +11,15 @@
   &__cards {
     @include media-query(md) {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);   
-      gap: get-size(max);
+      grid-template-columns: repeat(3, 1fr);   
+      gap: get-size(400);
     }
   }
 
   &__card {
     background-repeat: no-repeat;
     background-position: center;
-    height: 720px;
+    // height: 720px;
     padding: 5rem 4rem 4rem 4rem;
     position: relative;
 

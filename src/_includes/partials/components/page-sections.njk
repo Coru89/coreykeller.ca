@@ -38,6 +38,21 @@
             titleSecondary: block.titleSecondary,
             summary: block.summary
         }) }}
+
+        {% elseif block.template === 'steps-panel' %}
+        {{ component('steps', {
+            heading: block.heading,
+            backgroundColor: block.backgroundColor,
+            steps: block.steps,
+            title: block.title,
+            summary: block.summary
+        }) }}
+
+    {% elseif block.template === 'technologies-panel' %}
+        {{ component('technologies', {
+            panelHeading: block.panelHeading,
+            technologies: block.technologies
+        }) }}
     
     {% endif %}
 {% endfor %}

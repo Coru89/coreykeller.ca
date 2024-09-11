@@ -3,7 +3,7 @@
 
 		<div class="hero__heading-wrapper">
 			<div class="hero__heading-row">
-				<h1 id="header" class="hero__heading">{{ props.heroHeading | safe }}</h1>
+				<h1 id="header" class="hero__heading hero__heading--dynamic">{{ props.heroHeading | safe }}</h1>
 				<h1 id="cursor" class="hero__heading hero__cursor">|</h1>
 
 				{% if props.heroHeading2 %}
@@ -11,12 +11,12 @@
 				{% endif %}
 			</div>
 
-			<div data-sal-delay="400" class="hero__heading-row">
+			<div class="hero__heading-row">
 				{% if props.heroHeading3 %}
-					<h1 class="hero__heading">{{ props.heroHeading3 | safe }}</h1>
+					<h2 class="hero__heading">{{ props.heroHeading3 | safe }}</h2>
 				{% endif %}
 				{% if props.heroHeading4 %}
-					<h1 class="hero__heading hero__heading-emphasis">{{ props.heroHeading4 | safe }}</h1>
+					<h2 class="hero__heading hero__heading-emphasis">{{ props.heroHeading4 | safe }}</h2>
 				{% endif %}
 			</div>
 

@@ -69,6 +69,7 @@
     @include media-query(sm) {
       align-items: center;
       display: flex;
+      margin-left: 4rem;
     }
   }
 
@@ -82,11 +83,13 @@
     left: 0;
     list-style: none;
     margin: 1rem 0;
+
     text-align: left;
 
     @include media-query(md) {
       flex-direction: row;
       margin: 0;
+      margin-left: auto;
       position: static;
 
       & > .nav__item {
@@ -176,7 +179,7 @@
     &-link {
       color: currentColor;
       display: block;
-      font-family: get-font(serif);
+      // font-family: get-font(serif);
       font-weight: 500;
       padding: 2rem 0;
       position: relative;

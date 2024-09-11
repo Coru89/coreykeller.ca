@@ -3,18 +3,18 @@ title: Corey Keller - Frontend Developer
 permalink: index.html
 postsHeading: Insights
 archiveButtonText: See all insights
-portfolioHeading: Recent Work
+portfolioHeading: Recent Projects
 servicesHeading: Expertise
-heroHeading: 'Hey there, bud.'
-heroHeading2: I'm Corey!
-heroHeading3: A Frontend Developer.
+heroHeading: 'Hello, my name is'
+heroHeading2: 'Corey! '
+heroHeading3: A Frontend Developer ready to bring your next big idea to life.
 heroHeading4: null
 heroImage: /images/night-sky-fancy.png
 page_sections:
   - title: About
     titleSecondary: Meet Corey
-    titleSummary: 'A Front-end Developer building lightning-fast, user-friendly websites.'
-    summary: >+
+    titleSummary: 'I build blazing-fast, user-friendly websites.'
+    summary: >
       <p>I’m an experienced Front-End Developer with over 12 years in the
       industry, including nearly a decade in enterprise IT consulting before
       transitioning to freelance work, which I’ve been doing for the past 4
@@ -22,22 +22,13 @@ page_sections:
       websites from Figma mockups, with a focus on Shopify, WordPress, and Craft
       CMS.</p>
 
-
       <p>Web development has always been a passion of mine, driven by the
-      creative challenges and problem-solving it offers. I'm confident I can
-      knock any project out of the park in exchange for a glowing review.</p>
-
-
-
-
-
-
-
+      creative challenges and problem-solving it offers. </p>
     imageURL: /images/portrait-corey.png
     imagePosition: left
     imageAlt: Corey Keller
-    buttonText: Learn more
-    buttonPath: /services/websites
+    buttonText: null
+    buttonPath: null
     backgroundColor: grey
     template: about
   - title: Expertise
@@ -63,13 +54,33 @@ page_sections:
         label: Craft CMS
     template: skills
   - title: Work
-    titleSecondary: Recent Work
+    titleSecondary: Recent Projects
     items:
+      - title: Waterloo Innovation Park
+        summary: >-
+          A pixel-perfect, bespoke design thoughtfully built on Craft CMS. The
+          scope of work included building calendar and events functionality,
+          which allows communication of important happenings to tenants.
+          Additionally, I implemented art gallery display functionality complete
+          with a lightbox feature and dynamic loading.
+        buttonText: Visit the the site
+        buttonPath: 'https://www.waterlooinnovationpark.com'
+        imageURL: /images/wip-desktop.png
+      - title: California Ink
+        summary: >
+          California Ink is a fully custom WordPress solution that utilizes
+          Wordpress' Full Site Editing features. A custom and modern approach
+          was taken to build a gutenberg block theme including a mix of core and
+          custom blocks.
+        buttonText: Visit the site
+        buttonPath: 'https://cali-ink.com'
+        imageURL: /images/cali-ink-mock-desktop.png
       - title: Vanmade Gear
         summary: >-
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-          sequi nesciunt. Neque porro quisquam est, qui dolorem.
+          Vanmade Gear was seeking help re-branding and re-launching their
+          existing eCommerce site on Shopify. The objective was to scale an
+          already successful business through driving sales, increasing taffic
+          and growing brand awareness.
         buttonText: Read More
         buttonPath: /portfolio/vanmadegear
         imageURL: images/vmg-home-full.png
@@ -79,11 +90,11 @@ page_sections:
         isBottom: false
       - title: Colonia Treuhand
         summary: >-
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-          sequi nesciunt. Neque porro quisquam est, qui dolorem.
-        buttonText: Read More
-        buttonPath: /portfolio/colonia-truehand
+          This project was a Craft CMS multi-lingual site build for a Real
+          Estate Investment company based in Toronto. This a fully bespoke and
+          responsive site.
+        buttonText: Visit the site
+        buttonPath: 'https://coloniatreuhand.com'
         imageURL: images/ctam-home-full.png
         imageAlt: Colonia Treuhand
         imagePosition: left

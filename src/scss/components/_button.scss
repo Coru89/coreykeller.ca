@@ -65,12 +65,13 @@
 
     &--large {
       color: var(--color-black);
-      font-size: get-font-size(600);
+      font-size: get-font-size(500);
       font-weight: 700;
 
       svg {
         position: relative;
-        top: 3px;
+        top: 6px;
+        width: 24px;
       }
     }
   }

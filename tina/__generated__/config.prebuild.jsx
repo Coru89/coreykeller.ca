@@ -968,25 +968,84 @@ var config_default = defineConfig({
         ]
       },
       {
-        format: "json",
         label: "Navigation",
         name: "navigation",
+        format: "json",
         path: "src/_data",
-        ui: {
-          allowedActions: {
-            create: false,
-            delete: false
-          }
-        },
+        // This should match the directory containing your JSON file
         match: {
           include: "navigation"
+          // This should match the file name
         },
         fields: [
           {
-            name: "dummy",
-            label: "Dummy field",
-            type: "string",
-            description: "This is a dummy field, please replace it with the fields you want to edit. See https://tina.io/docs/schema/ for more info"
+            name: "items",
+            label: "Navigation Items",
+            type: "object",
+            list: true,
+            fields: [
+              {
+                name: "text",
+                label: "Text",
+                type: "string"
+              },
+              {
+                name: "url",
+                label: "URL",
+                type: "string"
+              },
+              {
+                name: "external",
+                label: "External Link",
+                type: "boolean"
+              },
+              {
+                name: "items",
+                label: "Subitems",
+                type: "object",
+                list: true,
+                fields: [
+                  {
+                    name: "text",
+                    label: "Text",
+                    type: "string"
+                  },
+                  {
+                    name: "url",
+                    label: "URL",
+                    type: "string"
+                  },
+                  {
+                    name: "external",
+                    label: "External Link",
+                    type: "boolean"
+                  },
+                  {
+                    name: "items",
+                    label: "Sub-subitems",
+                    type: "object",
+                    list: true,
+                    fields: [
+                      {
+                        name: "text",
+                        label: "Text",
+                        type: "string"
+                      },
+                      {
+                        name: "url",
+                        label: "URL",
+                        type: "string"
+                      },
+                      {
+                        name: "external",
+                        label: "External Link",
+                        type: "boolean"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       },

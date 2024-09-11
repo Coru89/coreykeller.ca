@@ -67,9 +67,11 @@
 
   &__credit {
     padding-bottom: 1rem;
+    font-size: 12px;
     
     @include media-query(md) {
       padding: 0;
+      font-size: 14px;
     }
   }
 

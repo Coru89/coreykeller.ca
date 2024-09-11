@@ -26,16 +26,16 @@
                   {% if item.data.rollupImage %}
                     {% image item.data.rollupImage, "hi", null, "lazy", "(min-width: 36rem) 100vw", ['400', '450', '500'] %}
                   {% endif %}
-                  <h1 class="portfolio-rollup__overlay-client">
+                  <h2 class="portfolio-rollup__overlay-client">
                     {{ item.data.client }}
-                  </h1>
+                  </h2>
                   <div class="portfolio-rollup__overlay" style="background-color: {{overlayColorHex}}">
                     <h3 class="portfolio-rollup__overlay-category">
                       {{ item.data.category }}
                     </h3>
-                    <h1 class="portfolio-rollup__overlay-client">
+                    <h2 class="portfolio-rollup__overlay-client">
                       {{ item.data.client }}
-                    </h1>
+                    </h2>
                     <p class="portfolio-rollup__overlay-description">
                       {{ item.data.rollupCardDescription }}
                     </p>

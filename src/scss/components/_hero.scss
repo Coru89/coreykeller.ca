@@ -33,7 +33,7 @@
       &:first-of-type {
         .hero__heading {
           font-weight: 400;
-          font-style: italic;
+          // font-style: italic;
 
           &:last-of-type {
             display: block;
@@ -50,6 +50,16 @@
         }
       }
     }
+  }
+
+  h2 {
+    font-size: 28px;
+    font-family: 'Europa';
+    max-width: 60%;
+    font-weight: normal;
+    line-height: 1.4;
+    color: var(--color-hero-heading);
+    text-transform: none;
   }
 
   &__cursor {
