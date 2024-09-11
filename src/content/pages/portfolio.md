@@ -1,12 +1,7 @@
 ---
 title: Portfolio
 _template: page
-permalink: "/portfolio/index.html"
+template: page
+# permalink: "/portfolio"
 layout: portfolio-landing.njk
-page_sections:
-- template: call_to_action
-  text: Interested in working together?
-  buttonText: Get in touch
-  buttonPath: "/contact"
-
 ---

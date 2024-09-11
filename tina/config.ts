@@ -17,6 +17,7 @@ import { portfolio_featured_panel_smallFields } from "./templates";
 // import { portfolio_featured_panelFields } from "./templates";
 // import { portfolio_image_panelFields } from "./templates";
 import { portfolio_itemFields } from "./templates";
+import { portfolioFields } from "./templates";
 import { postFields } from "./templates";
 import { service_panelFields } from "./templates";
 import { skills_sectionFields } from "./templates";
@@ -59,39 +60,30 @@ export default defineConfig({
         label: "Pages",
         name: "pages",
         path: "src/content/pages",
-        match: {
-          include: "**/*",
-          exclude: "**/*",
-        },
-        templates: [
+        // match: {
+        //   include: "*/*",  // Adjust this pattern as needed
+        // },
+        fields: [
+          ...pageFields(),
+        ],
+      },      
+      {
+        format: "md",
+        label: "Portfolio",
+        name: "portfolio",
+        path: "src/content/work",
+        // match: {
+        //   include: "*",
+        // },
+        fields: [
           {
-            fields: [
-              {
-                type: "rich-text",
-                name: "body",
-                label: "Body of Document",
-                description: "This is the markdown body",
-                isBody: true,
-              },
-              ...portfolio_itemFields(),
-            ],
-            label: "portfolio",
-            name: "portfolio",
+            type: "rich-text",
+            name: "body",
+            label: "Body of Document",
+            description: "This is the markdown body",
+            isBody: true,
           },
-          {
-            fields: [
-              {
-                type: "rich-text",
-                name: "body",
-                label: "Body of Document",
-                description: "This is the markdown body",
-                isBody: true,
-              },
-              ...pageFields(),
-            ],
-            label: "page",
-            name: "page",
-          },
+          ...portfolioFields(),
         ],
       },
       {

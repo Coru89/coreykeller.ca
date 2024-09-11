@@ -288,6 +288,72 @@ export function featured_work_panelFields() {
     },
   ] as TinaField[];
 }
+
+export function portfolioFields() {
+  return [
+    {
+      type: "string",
+      name: "title",
+      label: "Title",
+    },
+    {
+      type: "string",
+      name: "tags",
+      label: "Tags",
+      list: true,
+    },
+    {
+      type: "string",
+      name: "layout",
+      label: "Layout",
+    },
+    {
+      type: "string",
+      name: "permalink",
+      label: "Permalink",
+    },
+    {
+      type: "string",
+      name: "rollupCardBackgroundColor",
+      label: "Rollup Card Background Color",
+    },
+    {
+      type: "string",
+      name: "client",
+      label: "Client",
+    },
+    {
+      type: "image",
+      name: "rollupImage",
+      label: "Rollup Image",
+    },
+    {
+      type: "string",
+      name: "category",
+      label: "Category",
+    },
+    {
+      type: "string",
+      name: "year",
+      label: "Year",
+    },
+    {
+      type: "string",
+      name: "rollupCardOverlayBackgroundColor",
+      label: "Rollup Card Overlay Background Color",
+    },
+    {
+      type: "string",
+      name: "rollupCardDescription",
+      label: "Rollup Card Description",
+      ui: {
+        component: "textarea",
+      },
+    },
+  ] as TinaField[];
+}
+
+
 export function site_footFields() {
   return [
     {

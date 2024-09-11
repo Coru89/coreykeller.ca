@@ -2,6 +2,11 @@
 title: Websites
 permalink: /services/websites/index.html
 layout: page
+headerImageURL: images/ecommerce.png
+headerImageAlt: Website Offerings
+headerButtonText: Let's Talk
+headerButtonURL: /contact
+_template: page
 headerSummary: >-
   <p>When a website is outdated, poorly designed or otherwise frustrating, it is
   falling short of its potential to qualify leads and build reputation for your
@@ -142,11 +147,7 @@ page_sections:
     text: Interested in working together?
     buttonText: Get in touch
     buttonPath: /contact
-headerImageURL: images/ecommerce.png
-headerImageAlt: Website Offerings
-headerButtonText: Let's Talk
-headerButtonURL: /contact
-_template: page
+
 ---
 
 

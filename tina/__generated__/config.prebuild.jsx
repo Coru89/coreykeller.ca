@@ -242,6 +242,69 @@ function featured_work_panelFields() {
     }
   ];
 }
+function portfolioFields() {
+  return [
+    {
+      type: "string",
+      name: "title",
+      label: "Title"
+    },
+    {
+      type: "string",
+      name: "tags",
+      label: "Tags",
+      list: true
+    },
+    {
+      type: "string",
+      name: "layout",
+      label: "Layout"
+    },
+    {
+      type: "string",
+      name: "permalink",
+      label: "Permalink"
+    },
+    {
+      type: "string",
+      name: "rollupCardBackgroundColor",
+      label: "Rollup Card Background Color"
+    },
+    {
+      type: "string",
+      name: "client",
+      label: "Client"
+    },
+    {
+      type: "image",
+      name: "rollupImage",
+      label: "Rollup Image"
+    },
+    {
+      type: "string",
+      name: "category",
+      label: "Category"
+    },
+    {
+      type: "string",
+      name: "year",
+      label: "Year"
+    },
+    {
+      type: "string",
+      name: "rollupCardOverlayBackgroundColor",
+      label: "Rollup Card Overlay Background Color"
+    },
+    {
+      type: "string",
+      name: "rollupCardDescription",
+      label: "Rollup Card Description",
+      ui: {
+        component: "textarea"
+      }
+    }
+  ];
+}
 function image_text_panelFields() {
   return [
     {
@@ -429,43 +492,6 @@ function pageFields() {
     }
   ];
 }
-function portfolio_content_panelFields() {
-  return [
-    {
-      type: "string",
-      name: "title",
-      label: "Title"
-    },
-    {
-      type: "string",
-      name: "summary",
-      label: "Summary",
-      ui: {
-        component: "textarea"
-      }
-    },
-    {
-      type: "boolean",
-      name: "showMeta",
-      label: "Show Meta Data?"
-    },
-    {
-      type: "boolean",
-      name: "showButton",
-      label: "Show Button?"
-    },
-    {
-      type: "string",
-      name: "buttonText",
-      label: "Button Text"
-    },
-    {
-      type: "string",
-      name: "buttonPath",
-      label: "Button Path"
-    }
-  ];
-}
 function portfolio_featured_panel_smallFields() {
   return [
     {
@@ -506,207 +532,6 @@ function portfolio_featured_panel_smallFields() {
       name: "imagePosition",
       label: "Image Position",
       options: ["left", "right"]
-    }
-  ];
-}
-function portfolio_image_panelFields() {
-  return [
-    {
-      type: "string",
-      name: "imageLayout",
-      label: "Layout",
-      options: ["2 Desktop", "4 Mobile", "Full width image"]
-    },
-    {
-      type: "string",
-      name: "backgroundColor",
-      label: "Background Color",
-      options: ["Green Light", "Grey Light", "Red", "Green Dark"]
-    },
-    {
-      type: "boolean",
-      name: "isBottom",
-      label: "Is Bottom?"
-    },
-    {
-      type: "image",
-      name: "mobileImageURL1",
-      label: "Mobile Image 1"
-    },
-    {
-      type: "string",
-      name: "mobileImageAlt1",
-      label: "Mobile Image Alt 1"
-    },
-    {
-      type: "image",
-      name: "mobileImageURL2",
-      label: "Mobile Image 2"
-    },
-    {
-      type: "string",
-      name: "mobileImageAlt2",
-      label: "Mobile Image Alt 2"
-    },
-    {
-      type: "image",
-      name: "mobileImageURL3",
-      label: "Mobile Image 3"
-    },
-    {
-      type: "string",
-      name: "mobileImageAlt3",
-      label: "Mobile Image Alt 3"
-    },
-    {
-      type: "image",
-      name: "mobileImageURL4",
-      label: "Mobile Image 4"
-    },
-    {
-      type: "string",
-      name: "mobileImageAlt4",
-      label: "Mobile Image Alt 4"
-    },
-    {
-      type: "image",
-      name: "mobileImageURL5",
-      label: "Mobile Image 5"
-    },
-    {
-      type: "string",
-      name: "mobileImageAlt5",
-      label: "Mobile Image Alt 5"
-    },
-    {
-      type: "image",
-      name: "desktopImageURL1",
-      label: "Desktop Image 1"
-    },
-    {
-      type: "image",
-      name: "desktopImageAlt1",
-      label: "Desktop Image Alt 1"
-    },
-    {
-      type: "image",
-      name: "desktopImageURL2",
-      label: "Desktop Image 2"
-    },
-    {
-      type: "string",
-      name: "desktopImageAlt2",
-      label: "Desktop Image Alt 2"
-    },
-    {
-      type: "image",
-      name: "desktopImageURL3",
-      label: "Desktop Image 3"
-    },
-    {
-      type: "string",
-      name: "desktopImageAlt3",
-      label: "Desktop Image Alt 3"
-    }
-  ];
-}
-function portfolio_itemFields() {
-  return [
-    {
-      type: "string",
-      name: "client",
-      label: "Client"
-    },
-    {
-      type: "string",
-      name: "title",
-      label: "Title"
-    },
-    {
-      type: "boolean",
-      name: "useDarkTitle",
-      label: "Use Dark Title"
-    },
-    {
-      type: "string",
-      name: "year",
-      label: "Year"
-    },
-    {
-      type: "string",
-      name: "category",
-      label: "Category",
-      list: true,
-      ui: {
-        component: "tags"
-      }
-    },
-    {
-      type: "string",
-      name: "expertise",
-      label: "Expertise",
-      list: true,
-      ui: {
-        component: "tags"
-      }
-    },
-    {
-      type: "string",
-      name: "rollupCardDescription",
-      label: "Rollup Description",
-      ui: {
-        component: "textarea"
-      }
-    },
-    {
-      type: "image",
-      name: "rollupImage",
-      label: "Rollup Image"
-    },
-    {
-      type: "image",
-      name: "rollupBackgroundImage",
-      label: "Rollup Background Image"
-    },
-    {
-      type: "string",
-      name: "rollupCardBackgroundColor",
-      label: "Rollup Card Background Color",
-      ui: {
-        component: "color"
-      }
-    },
-    {
-      type: "string",
-      name: "rollupCardOverlayBackgroundColor",
-      label: "Rollup Card Overlay Background Color",
-      ui: {
-        component: "color"
-      }
-    },
-    {
-      type: "object",
-      list: true,
-      templateKey: "template",
-      label: "Page Sections",
-      name: "page_sections_portfolio",
-      templates: [
-        {
-          fields: portfolio_image_panelFields(),
-          label: "Portfolio Image Panel",
-          name: "portfolio_image_panel"
-        },
-        {
-          fields: portfolio_content_panelFields(),
-          label: "Portfolio Content Panel",
-          name: "portfolio_content_panel"
-        },
-        {
-          fields: call_to_actionFields(),
-          label: "Call to action",
-          name: "call_to_action"
-        }
-      ]
     }
   ];
 }
@@ -973,39 +798,30 @@ var config_default = defineConfig({
         label: "Pages",
         name: "pages",
         path: "src/content/pages",
-        match: {
-          include: "**/*",
-          exclude: "**/*"
-        },
-        templates: [
+        // match: {
+        //   include: "*/*",  // Adjust this pattern as needed
+        // },
+        fields: [
+          ...pageFields()
+        ]
+      },
+      {
+        format: "md",
+        label: "Portfolio",
+        name: "portfolio",
+        path: "src/content/work",
+        // match: {
+        //   include: "*",
+        // },
+        fields: [
           {
-            fields: [
-              {
-                type: "rich-text",
-                name: "body",
-                label: "Body of Document",
-                description: "This is the markdown body",
-                isBody: true
-              },
-              ...portfolio_itemFields()
-            ],
-            label: "portfolio",
-            name: "portfolio"
+            type: "rich-text",
+            name: "body",
+            label: "Body of Document",
+            description: "This is the markdown body",
+            isBody: true
           },
-          {
-            fields: [
-              {
-                type: "rich-text",
-                name: "body",
-                label: "Body of Document",
-                description: "This is the markdown body",
-                isBody: true
-              },
-              ...pageFields()
-            ],
-            label: "page",
-            name: "page"
-          }
+          ...portfolioFields()
         ]
       },
       {
