@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "sass:tokens": "npx json-to-scss src/_data/tokens.json src/scss/tokens.scss",
-    "start": "npx gulp && concurrently \"npm run sass:tokens -- --watch\" \"npx gulp watch\" \"npx eleventy --input=src --serve --config=.eleventy.js\"",
+    "start": "npm run partytowm && npx gulp && concurrently \"npm run sass:tokens -- --watch\" \"npx gulp watch\" \"npx eleventy --input=src --serve --config=.eleventy.js\"",
     "build": "cross-env NODE_ENV=production npx gulp && cross-env NODE_ENV=production npx eleventy --input=src --config=.eleventy.js",
-    "tina": "npx tinacms dev -c \"npx gulp && concurrently \\\"npm run sass:tokens -- --watch\\\" \\\"npx gulp watch\\\" \\\"npx eleventy --input=src --serve --config=.eleventy.js\\\"\"",
-    "tina_build": "npx tinacms build && npm run build"
+    "tina": "npm run partytown && npx tinacms dev -c \"npx gulp && concurrently \\\"npm run sass:tokens -- --watch\\\" \\\"npx gulp watch\\\" \\\"npx eleventy --input=src --serve --config=.eleventy.js\\\"\"",
+    "tina_build": "npm run partytown && npx tinacms build && npm run build",
+    "partytown": "partytown copylib dist/~partytown"
   },
   "keywords": [],
   "author": "",
@@ -51,6 +52,7 @@
   "dependencies": {
     "@11ty/eleventy-upgrade-help": "^2.0.5",
     "@babel/core": "^7.25.2",
+    "@builder.io/partytown": "^0.10.2",
     "babel-loader": "^9.1.3",
     "sal.js": "^0.8.5",
     "sharp": "^0.33.5",

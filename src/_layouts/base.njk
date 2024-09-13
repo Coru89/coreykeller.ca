@@ -12,6 +12,15 @@
   <link rel="manifest" href="/site.webmanifest">
   {% include "partials/global/meta-info.njk" %}
   <style>{% include "css/global.css" %}</style>
+  <!-- Google tag (gtag.js) -->
+  <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-QBSDKHB0E5"></script>
+  <script type="text/partytown">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QBSDKHB0E5');
+  </script>
   {% block head %}
   {% endblock %}
 </head>
