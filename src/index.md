@@ -63,7 +63,7 @@ page_sections:
           which allows communication of important happenings to tenants.
           Additionally, I implemented art gallery display functionality complete
           with a lightbox feature and dynamic loading.
-        buttonText: Visit the the site
+        buttonText: Visit the site
         buttonPath: 'https://www.waterlooinnovationpark.com'
         imageURL: /images/wip-desktop.png
       - title: California Ink
@@ -83,7 +83,7 @@ page_sections:
           and growing brand awareness.
         buttonText: Read More
         buttonPath: /portfolio/vanmadegear
-        imageURL: images/vmg-home-full.png
+        imageURL: /imagesimages/vmg-home-full.png
         imageAlt: Vanmade Gear
         imagePosition: right
         backgroundColor: EE964B
@@ -95,7 +95,7 @@ page_sections:
           responsive site.
         buttonText: Visit the site
         buttonPath: 'https://coloniatreuhand.com'
-        imageURL: images/ctam-home-full.png
+        imageURL: /imagesimages/ctam-home-full.png
         imageAlt: Colonia Treuhand
         imagePosition: left
         backgroundColor: AA6373
