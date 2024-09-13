@@ -5,7 +5,7 @@ exports.imageShortCode = (src, alt, cls, loading, sizes, widths, dataSal, dataSa
     let options = {
         widths: widths,
         formats: ['avif', 'jpeg'],
-        outputDir: "./src/served",
+        outputDir: "./dist/served",
         urlPath: "/served",
         useCache: true
     };
