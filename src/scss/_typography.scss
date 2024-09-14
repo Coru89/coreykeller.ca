@@ -86,12 +86,14 @@ body {
 h1,
 h2,
 h3,
+.h3,
 h4 {
   margin-top: 0;
 }
  
  h1,
- h3 {
+ h3,
+ .h3 {
   font-family: get-font(serif-alt);
 }
 
@@ -99,7 +101,8 @@ h1 {
   font-size: get-font-size(900);
 }
 
-h2 {
+h3,
+.h3 {
   font-size: get-font-size(400);
   text-transform: uppercase;
   color: var(--color-blue);
@@ -107,7 +110,7 @@ h2 {
   font-weight: 700;
 }
 
-h3 {
+h2 {
   font-size: get-font-size(700);
   color: var(--color-blue-dark);
 }
@@ -127,11 +130,12 @@ h4 {
      font-weight: 500;
    }
 
-  h2 {
+  h3,
+  .h3 {
      font-size: get-font-size(500);
    }
 
-   h3 {
+   h2 {
     font-size: get-font-size(800);
    }
 

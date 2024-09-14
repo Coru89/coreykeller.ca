@@ -12,10 +12,10 @@
             <path class="shape-fill" d="M1242.5 92L342 30L0 46.5V120H1679V30L1242.5 92Z"/>
         </svg>
   </div>
-  <div class="work-panel__inner{% if props.imagePosition === 'right' %} work-panel__inner--reverse{% endif %}" style="background-color: {{colorHexCard}};">
+  <div class="work-panel__inner{% if props.imagePosition === 'right' %} work-panel_co_inner--reverse{% endif %}" style="background-color: {{colorHexCard}};">
     <div class="work-panel__row work-panel__heading-wrapper">
-        <h2 data-sal="fade" data-sal-delay="200">{{ props.title }}</h2>
-        <h3 data-sal="slide-up" data-sal-delay="400" class="">{{ props.titleSecondary }}</h3>
+        <div class="h3" data-sal="fade" data-sal-delay="200">{{ props.title }}</div>
+        <h2 data-sal="slide-up" data-sal-delay="400" class="">{{ props.titleSecondary }}</h2>
     </div> 
     <div class="work-panel__row work-panel__items">
       {% for item in props.items %} 

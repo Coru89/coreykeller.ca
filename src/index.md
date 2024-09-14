@@ -83,7 +83,7 @@ page_sections:
           and growing brand awareness.
         buttonText: Read More
         buttonPath: /portfolio/vanmadegear
-        imageURL: /imagesimages/vmg-home-full.png
+        imageURL: /images/vmg-home-full.png
         imageAlt: Vanmade Gear
         imagePosition: right
         backgroundColor: EE964B
@@ -95,7 +95,7 @@ page_sections:
           responsive site.
         buttonText: Visit the site
         buttonPath: 'https://coloniatreuhand.com'
-        imageURL: /imagesimages/ctam-home-full.png
+        imageURL: /images/ctam-home-full.png
         imageAlt: Colonia Treuhand
         imagePosition: left
         backgroundColor: AA6373

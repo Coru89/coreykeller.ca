@@ -23,8 +23,6 @@
 
   &__inner {
     @include panel-container;
-    
-
   }
 
   &__items {
@@ -138,6 +136,8 @@
       color: var(--color-black);
       display: none;
       font-size: 26px;
+      text-transform: none;
+      margin-bottom: 2rem;
 
       @include media-query(lg) {
         font-size: 28px;

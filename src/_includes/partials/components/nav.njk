@@ -2,13 +2,13 @@
 
 {% if navigation.items %}
   <nav class="nav" aria-label="{{ariaLabel}}">
-    <button class="nav__button{% if page.url == ('/') %} nav__button--isHome{% endif %}" id="nav" aria-label="toggle navigation menu">
+    {# <button class="nav__button{% if page.url == ('/') %} nav__button--isHome{% endif %}" id="nav" aria-label="toggle navigation menu">
       {% svg "nav" %}
       {% svg "close" %}
-    </button>
+    </button> #}
     <div class="nav__wrapper">
       {# logo #}
-      <a title="Site Logo - click to return home" href="/">{% svg "ck-logo-2" %}</a>
+      <a class="nav__logo" title="Site Logo - click to return home" href="/">{% svg "ck-logo-2" %}</a>
       <ul class="nav__list">
         {% for item in navigation.items %}
           {% set relAttribute = '' %}
@@ -35,10 +35,10 @@
         </div>
         {# <div class="nav__theme">
           <theme-toggle></theme-toggle>
-        </div> #}
+        </div>
 
-        {# {% include "partials/components/social-icons.njk" %} #}
-      </div>
+        {% include "partials/components/social-icons.njk" %}
+      </div> #}
     </div>
   </nav>
 {% endif %}
