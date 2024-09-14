@@ -11,7 +11,7 @@ exports.imageShortCode = (src, alt, cls, loading, sizes, widths, dataSal, dataSa
     };
 
     // Generate images, while this is async we don’t wait
-    Image(`./src/${src}`, options);
+    Image(`./src`, options);
 
     let imageAttributes = {
         class: cls || '', // Default to empty string if cls is not provided
