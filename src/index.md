@@ -24,7 +24,7 @@ page_sections:
 
       <p>Web development has always been a passion of mine, driven by the
       creative challenges and problem-solving it offers. </p>
-    imageURL:
+    imageURL: /./images/IMG_5223.jpeg
     imagePosition: left
     imageAlt: Corey Keller
     buttonText: null
@@ -43,13 +43,13 @@ page_sections:
     buttonText: Read More
     buttonPath: /portfolio/vanmadegear
     items:
-      - image: /images/jamstack.png
+      - image: /./images/images/jamstack.png
         label: Jamstack
-      - image: /images/wordpress.svg
+      - image: /./images/images/wordpress.svg
         label: Wordpress
-      - image: /images/shopify.svg
+      - image: /./images/images/shopify.svg
         label: Shopify
-      - image: /images/craft cms.svg
+      - image: /./images/images/craft cms.svg
         imageSVG: ''
         label: Craft CMS
     template: skills
@@ -65,7 +65,7 @@ page_sections:
           with a lightbox feature and dynamic loading.
         buttonText: Visit the site
         buttonPath: 'https://www.waterlooinnovationpark.com'
-        imageURL: /images/wip-desktop.png
+        imageURL: /./images/images/wip-desktop.png
       - title: California Ink
         summary: >
           California Ink is a fully custom WordPress solution that utilizes
@@ -74,7 +74,7 @@ page_sections:
           custom blocks.
         buttonText: Visit the site
         buttonPath: 'https://cali-ink.com'
-        imageURL: /images/cali-ink-mock-desktop.png
+        imageURL: /./images/images/cali-ink-mock-desktop.png
       - title: Vanmade Gear
         summary: >-
           Vanmade Gear was seeking help re-branding and re-launching their
@@ -83,7 +83,7 @@ page_sections:
           and growing brand awareness.
         buttonText: Read More
         buttonPath: /portfolio/vanmadegear
-        imageURL: /images/vmg-home-full.png
+        imageURL: /./images/images/vmg-home-full.png
         imageAlt: Vanmade Gear
         imagePosition: right
         backgroundColor: EE964B
@@ -95,7 +95,7 @@ page_sections:
           responsive site.
         buttonText: Visit the site
         buttonPath: 'https://coloniatreuhand.com'
-        imageURL: /images/ctam-home-full.png
+        imageURL: /./images/images/ctam-home-full.png
         imageAlt: Colonia Treuhand
         imagePosition: left
         backgroundColor: AA6373
