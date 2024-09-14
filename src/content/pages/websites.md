@@ -101,30 +101,30 @@ page_sections:
   - template: technologies_panel
     panelHeading: Technologies we ❤️
     technologies:
-      - imagePath: images/wordpress-logotype-standard.png
+      - imagePath:
         imageAlt: WordPress
         description: >-
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
           sequi nesciunt.
-      - imagePath: images/tina.png
+      - imagePath:
         imageAlt: Tina
         description: >-
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
           sequi nesciunt.
-      - imagePath: images/netlify.png
+      - imagePath:
         imageAlt: Netlify
         description: >-
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
           sequi nesciunt.
-      - imagePath: images/craft.png
+      - imagePath:
         imageAlt: Craft CMS
         description: >-
           Craft CMS offers an intuitive content authoring expereince. Craft is a
           great option for bespoke design and custom develpment work.
-      - imagePath: images/jamstack.png
+      - imagePath:
         imageAlt: Jamstack
         description: >-
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
@@ -138,7 +138,7 @@ page_sections:
       urna bibendum varius. Vestibulum ante ipsum primis in faucibus orci luctus
       et ultrices posuere cubilia curae; Ut quis iaculis felis. Phasellus luctus
       semper velit.
-    image: images/ctam-home.png
+    image:
     buttonPath: /portfolio/colonia-treuhand/
     buttonText: Read More
     imageAlt: Colonia Treuhand Website
