@@ -3,6 +3,8 @@ const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
 const sass = require('./gulp-tasks/sass.js');
 
+const gulp = require('gulp');
+
 const js = (cb) => {
   webpack(webpackConfig, (err, stats) => {
     if (err) console.log('Webpack', err);
@@ -10,6 +12,11 @@ const js = (cb) => {
     cb();
   });
 };
+
+gulp.task('copy-images', function() {
+  return gulp.src('dist/images/**/*')
+    .pipe(gulp.dest('src/images'));
+});
 
 const watcher = () => {
   watch('./src/scss/**/*.scss', sass);

@@ -8,10 +8,10 @@ exports.imageShortCode = (src, alt, cls, loading, sizes, widths, dataSal, dataSa
     const inputPath = isProd ? `./dist/${src}` : `./src/${src}`;
 
     let options = {
-        widths: widths || [300, 600, 900],
+        widths: widths,
         formats: ['avif', 'jpeg'],
-        outputDir: isProd ? "./dist/served" : "./dist/served", // Output to dist in prod, src in dev
-        urlPath: isProd ? "/served" : "/served", // URL path remains the same for consistency
+        outputDir: "./dist/served",
+        urlPath: "/served",
         useCache: true
     };
 
