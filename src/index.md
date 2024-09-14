@@ -9,7 +9,7 @@ heroHeading: 'Hello, my name is'
 heroHeading2: 'Corey! '
 heroHeading3: A Frontend Developer ready to bring your next big idea to life.
 heroHeading4: null
-heroImage: /images/night-sky-fancy.png
+heroImage:
 page_sections:
   - title: About
     titleSecondary: Meet Corey

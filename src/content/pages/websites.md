@@ -1,12 +1,7 @@
 ---
-title: Websites
 permalink: /services/websites/index.html
 layout: page
-headerImageURL: images/ecommerce.png
-headerImageAlt: Website Offerings
-headerButtonText: Let's Talk
-headerButtonURL: /contact
-_template: page
+title: Websites
 headerSummary: >-
   <p>When a website is outdated, poorly designed or otherwise frustrating, it is
   falling short of its potential to qualify leads and build reputation for your
@@ -18,12 +13,17 @@ headerSummary: >-
   prescense that provides measurable ROI. With the average shelf-life of a
   website being 3-5 years, it could take as little as one to a handful of sales
   conversions to recoup your costs.</p>
+headerButtonText: Let's Talk
+headerButtonURL: /contact
+headerImageURL: ''
+headerImageAlt: Website Offerings
 metaDesc: Websites
 socialImage: ''
 page_sections:
-  - template: cards_with_icon
+  - heading: Why Corey Keller?
     backgroundColor: grey
-    heading: Why Corey Keller?
+    buttonText: ''
+    buttonPath: ''
     cards:
       - title: "Pride in performance \U0001F680"
         summary: >-
@@ -62,10 +62,8 @@ page_sections:
           excellect expereince regardless of device or screen size.
         linkPath: ''
         icon: ''
-    buttonText: ''
-    buttonPath: ''
-  - template: steps_panel
-    heading: Our Process
+    template: cards_with_icon
+  - heading: Our Process
     backgroundColor: light green
     steps:
       - title: Define
@@ -98,72 +96,55 @@ page_sections:
           After your site is live, we don't have to say goodbye. Want to make
           some changes? Need help to review your analytics? Tweak an SEO
           stratgey? We are here to help!
-  - template: technologies_panel
-    panelHeading: Technologies we ❤️
+    template: steps_panel
+  - panelHeading: Technologies we ❤️
     technologies:
-      - imagePath:
+      - imagePath: null
         imageAlt: WordPress
         description: >-
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
           sequi nesciunt.
-      - imagePath:
+      - imagePath: null
         imageAlt: Tina
         description: >-
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
           sequi nesciunt.
-      - imagePath:
+      - imagePath: null
         imageAlt: Netlify
         description: >-
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
           sequi nesciunt.
-      - imagePath:
+      - imagePath: null
         imageAlt: Craft CMS
         description: >-
           Craft CMS offers an intuitive content authoring expereince. Craft is a
           great option for bespoke design and custom develpment work.
-      - imagePath:
+      - imagePath: null
         imageAlt: Jamstack
         description: >-
           Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
           fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
           sequi nesciunt.
-  - template: portfolio_featured_panel_small
-    title: Colonia Treuhand
+    template: technologies_panel
+  - title: Colonia Treuhand
     description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
       tincidunt felis enim, sed commodo ante mollis ac. Quisque ornare enim nec
       urna bibendum varius. Vestibulum ante ipsum primis in faucibus orci luctus
       et ultrices posuere cubilia curae; Ut quis iaculis felis. Phasellus luctus
       semper velit.
-    image:
-    buttonPath: /portfolio/colonia-treuhand/
     buttonText: Read More
+    buttonPath: /portfolio/colonia-treuhand/
+    image: null
     imageAlt: Colonia Treuhand Website
     imagePosition: ''
-  - template: call_to_action
-    text: Interested in working together?
+    template: portfolio_featured_panel_small
+  - text: Interested in working together?
     buttonText: Get in touch
     buttonPath: /contact
-
+    template: call_to_action
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
