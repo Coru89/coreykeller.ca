@@ -9,7 +9,7 @@ heroHeading: 'Hello, my name is'
 heroHeading2: 'Corey! '
 heroHeading3: A Frontend Developer ready to bring your next big idea to life.
 heroHeading4: null
-heroImage:
+heroImage: null
 page_sections:
   - title: About
     titleSecondary: Meet Corey
@@ -24,7 +24,7 @@ page_sections:
 
       <p>Web development has always been a passion of mine, driven by the
       creative challenges and problem-solving it offers. </p>
-    imageURL: /upwork-400.png
+    imageURL: /images/preformance.PNG
     imagePosition: left
     imageAlt: Corey Keller
     buttonText: null
