@@ -3,34 +3,32 @@ const Image = require("@11ty/eleventy-img");
 
 exports.imageShortCode = (src, alt, cls, loading, sizes, widths, dataSal, dataSalDelay) => {
     let options = {
-        widths: widths,
+        widths: widths || [300, 600, 900], // default widths if not provided
         formats: ['avif', 'jpeg'],
-        outputDir: "./dist/served",
-        urlPath: "/served",
+        outputDir: "./dist/served", // Output to the dist folder
+        urlPath: "/served", // Public URL path
         useCache: true
     };
 
-    // Generate images, while this is async we don’t wait
-    Image(`./src`, options);
+    // Use src folder for input images
+    Image(`./src/${src}`, options);
 
     let imageAttributes = {
-        class: cls || '', // Default to empty string if cls is not provided
-        alt: alt || '', // Default to empty string if alt is not provided
-        sizes: sizes || '100vw', // Default sizes if not provided
-        loading: loading || 'lazy', // Default to 'lazy' if not provided
-        'data-sal': dataSal || '', // Add data-sal attribute, default to empty string if not provided
-        'data-sal-delay': dataSalDelay || '' // Add data-sal-delay attribute, default to empty string if not provided
+        class: cls || '', // Optional CSS class
+        alt: alt || '', // Alt text for accessibility
+        sizes: sizes || '100vw', // Responsive sizes
+        loading: loading || 'lazy', // Lazy loading for performance
+        'data-sal': dataSal || '', // Animation attributes
+        'data-sal-delay': dataSalDelay || '' // Animation delay
     };
 
-    // Get metadata even if the images are not fully generated
+    // Retrieve image metadata to generate the HTML
     let metadata = Image.statsSync(`./src/${src}`, options);
     return Image.generateHTML(metadata, imageAttributes);
 }
 
 /**
- * Add shortcode for processing images.
- *
- * @param {object} eleventyConfig Eleventy's configuration object
+ * Register the image shortcode with Eleventy
  */
 exports.default = (eleventyConfig) => {
     eleventyConfig.addShortcode("image", (src, alt, cls, loading, sizes, widths, dataSal, dataSalDelay) => {
