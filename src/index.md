@@ -24,7 +24,7 @@ page_sections:
 
       <p>Web development has always been a passion of mine, driven by the
       creative challenges and problem-solving it offers. </p>
-    imageURL: /images/preformance.PNG
+    imageURL:
     imagePosition: left
     imageAlt: Corey Keller
     buttonText: null
