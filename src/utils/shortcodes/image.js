@@ -5,7 +5,8 @@ exports.imageShortCode = (src, alt, cls, loading, sizes, widths, dataSal, dataSa
     const isProd = process.env.NODE_ENV === "production";
 
     // In development, use the `src` folder for input images.
-    const inputPath = isProd ? `./dist/${src}` : `./src/${src}`;
+    // const inputPath = isProd ? `./dist/${src}` : `./src/${src}`;
+    const inputPath = `./src/${src}`;
 
     let options = {
         widths: widths,
