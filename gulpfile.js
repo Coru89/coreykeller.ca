@@ -5,6 +5,16 @@ const sass = require('./gulp-tasks/sass.js');
 
 const gulp = require('gulp');
 
+// const copyImages = require('./gulp-tasks/copy-images.js'); // Update the path
+
+// // Register the task
+// gulp.task('copy-images', copyImages);
+
+// // Optionally, define a default task
+// gulp.task('default', gulp.series('copy-images'));
+
+
+
 const js = (cb) => {
   webpack(webpackConfig, (err, stats) => {
     if (err) console.log('Webpack', err);
@@ -12,11 +22,6 @@ const js = (cb) => {
     cb();
   });
 };
-
-gulp.task('copy-images', function() {
-  return gulp.src('dist/images/**/*')
-    .pipe(gulp.dest('src/images'));
-});
 
 const watcher = () => {
   watch('./src/scss/**/*.scss', sass);
