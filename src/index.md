@@ -13,14 +13,13 @@ heroImage: null
 page_sections:
   - title: About
     titleSecondary: Meet Corey
-    titleSummary: 'I build blazing-fast, user-friendly websites.'
+    titleSummary: I build fast and user-friendly websites.
     summary: >
-      <p>Hi! I'm Corey, a Web Developer who specialises in making the web
-      user-friendly. My expertise is in Front-End Development and I am
-      experienced building with WordPress, Craft CMS, and Shopify. My strong
-      communication skills and thorough approach stem from my background as a
-      Business Analyst. Web development has always been a passion of mine,
-      driven by the creative challenges and problem-solving it offers.</p>
+      <p>I specialise in making the web user-friendly. I am experienced building
+      with WordPress, Craft CMS and Shopify. My strong communication skills and
+      thorough approach stem from my background as a Business Analyst. Web
+      development has always been a passion of mine, driven by the creative
+      challenges and problem-solving it offers.</p>
     imageURL: /images/corey-cicle.png
     imagePosition: left
     imageAlt: Corey Keller
