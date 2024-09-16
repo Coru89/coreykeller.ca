@@ -15,15 +15,12 @@ page_sections:
     titleSecondary: Meet Corey
     titleSummary: 'I build blazing-fast, user-friendly websites.'
     summary: >
-      <p>I’m an experienced Front-End Developer with over 12 years in the
-      industry, including nearly a decade in enterprise IT consulting before
-      transitioning to freelance work, which I’ve been doing for the past 4
-      years. I specialize in building lightning-fast, pixel-perfect, responsive
-      websites from Figma mockups, with a focus on Shopify, WordPress, and Craft
-      CMS.</p>
-
-      <p>Web development has always been a passion of mine, driven by the
-      creative challenges and problem-solving it offers. </p>
+      <p>Hi! I'm Corey, a Web Developer who specialises in making the web
+      user-friendly. My expertise is in Front-End Development and I am
+      experienced building with WordPress, Craft CMS, and Shopify. My strong
+      communication skills and thorough approach stem from my background as a
+      Business Analyst. Web development has always been a passion of mine,
+      driven by the creative challenges and problem-solving it offers.</p>
     imageURL: /images/corey-cicle.png
     imagePosition: left
     imageAlt: Corey Keller
