@@ -97,12 +97,10 @@ page_sections:
         backgroundColor: AA6373
         isBottom: true
     template: featured_work
-  - title: Hit Me Up!
+  - title: Give me a shout!
     titleSecondary: Contact
     summary: >-
-      When a website is outdated, poorly designed or otherwise frustrating, it
-      is falling short of its potential to qualify leads and build reputation
-      for your business. Need a new site or a refresh? Work with us to create a
+      Have a question? Need a new site or a refresh? Work with me to create a
       modern website that will strengthen your brand, credibility,
       professionalism and serve as a hub of your online prescense.
     template: contact
