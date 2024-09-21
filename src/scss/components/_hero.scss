@@ -50,10 +50,6 @@
             // display: block;
             font-weight: 600;
             margin-bottom: 0;
-
-            // @include media-query(md) {
-            //   display: inline-block;
-            // }
           }
 
 
@@ -122,6 +118,10 @@
       svg {
         stroke: #fff;
       }
+    }
+
+    @include media-query(sm) {
+      display: none;
     }
   }
 }
