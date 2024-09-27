@@ -67,13 +67,32 @@
     // }
   }
 
-  &__logo svg,
-  &__logo {
-    height: 34px;
-    width: auto;
+  // &__logo svg,
+  // &__logo {
+  //   height: 34px;
+  //   width: auto;
 
-    @include media-query(md) {
-      height: 45px;
+  //   @include media-query(md) {
+  //     height: 45px;
+  //   }
+  // }
+
+  &__logo {
+    &-link {
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+    }
+
+    &-text {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--color-green-dark);
+      // padding-left: 1rem;
+    }
+
+    &-image {
+      width: 60px;
     }
   }
 
@@ -334,7 +353,8 @@
 
   &__contact {
     .button {
-      background-color: var(--color-green-dark);
+      // background-color: var(--color-white);
+      font-weight: 700;
       text-align: center;
       width: 100%;
 

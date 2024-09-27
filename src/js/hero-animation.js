@@ -1,6 +1,6 @@
 const header = document.querySelector("#header");
 const cursor = document.querySelector("#cursor");
-const texts = ["Hello, my name is", "Nice to meet you. I'm"];
+const texts = ["Hello, my name is"];
 
 let index = 0;
 let i = 0;

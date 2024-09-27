@@ -8,7 +8,13 @@
     </button> #}
     <div class="nav__wrapper">
       {# logo #}
-      <a class="nav__logo" title="Site Logo - click to return home" href="/">{% svg "ck-logo-2" %}</a>
+
+        <a class="nav__logo-link" title="Site Logo - click to return home" href="/">
+          {# {% image "images/corey-logo-84.png", "Photo of Corey", "nav__logo-image", "eager", "100vw", ['84'] %} #}
+          <div class="nav__logo-text">Corey Keller</div>
+        </a>
+
+
       <ul class="nav__list">
         {% for item in navigation.items %}
           {% set relAttribute = '' %}
@@ -27,11 +33,11 @@
             <a class="nav__item-link{% if page.url == ('/') %} nav__item-link--isHome{% endif %}" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}><span class="nav__item-link-text">{{ item.text }}</span></a>
           </li>
         {% endfor %}
-        {% from "macros/macros.njk" import button_link %}
+        {% from "macros/macros.njk" import button_link_fancy %}
       </ul>
       <div class="nav__secondary">
         <div class="nav__contact">
-        {{ button_link("Let's talk", "/#contact", true) }}
+        {{ button_link_fancy("Say Hello", "/#contact", false) }}
         </div>
         {# <div class="nav__theme">
           <theme-toggle></theme-toggle>

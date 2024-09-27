@@ -185,6 +185,11 @@ function featured_work_panelFields() {
       type: "object",
       name: "items",
       label: "Items",
+      ui: {
+        itemProps: (item) => {
+          return { label: `${item?.title}` };
+        }
+      },
       list: true,
       fields: [
         {
@@ -213,6 +218,31 @@ function featured_work_panelFields() {
           label: "Button Path"
         },
         {
+          type: "string",
+          name: "linkText",
+          label: "External Link Text",
+          default: "Visit the site"
+        },
+        {
+          type: "string",
+          name: "linkPath",
+          label: "External Link Path"
+        },
+        {
+          type: "object",
+          name: "tags",
+          label: "Tags",
+          list: true,
+          fields: [
+            {
+              type: "string",
+              name: "label",
+              label: "Label",
+              options: ["Craft CMS", "Wordpress", "Shopify", "Static"]
+            }
+          ]
+        },
+        {
           type: "image",
           name: "imageURL",
           label: "Image URL"
@@ -232,11 +262,6 @@ function featured_work_panelFields() {
           type: "string",
           name: "backgroundColor",
           label: "Background Color (Hex)"
-        },
-        {
-          type: "boolean",
-          name: "isBottom",
-          label: "Is Bottom"
         }
       ]
     }

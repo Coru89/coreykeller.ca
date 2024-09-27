@@ -24,12 +24,9 @@
     </svg>
   </div>
   <div class="about__inner" style="background-color: {{colorHexCard}};">
+
     <div class="about__row">
-      <div class="h3" data-sal="fade" data-sal-delay="200">{{ props.title }}</div>
-      <h2 data-sal="slide-up" data-sal-delay="400" class="section__heading">{{ props.titleSecondary }}</h2>
-    </div>
-    <div class="about__row">
-        <div class="about__image{% if props.imagePosition === 'right' %} about__image--reverse{% endif %}">
+        <div  data-sal="slide-right" data-sal-delay="400" class="about__image{% if props.imagePosition === 'right' %} about__image--reverse{% endif %}">
           {% if props.imageURL.length %}
             {% image props.imageURL,
             props.imageAlt,
@@ -38,9 +35,13 @@
             "100vw",
             ['300', '400', '560'] %}
           {% endif %}
+          <div data-sal="fade" data-sal-duration="1000" data-sal-delay="600" class="about__image-bg"></div>
+
+          <div data-sal="slide-right" data-sal-delay="600" class="about__image-bg about__image-bg2"></div>
         </div>
 
-        <div class="about__text{% if props.imagePosition === 'right' %} about__text--reverse{% endif %}">
+        <div data-sal="slide-left" data-sal-delay="400" class="about__text{% if props.imagePosition === 'right' %} about__text{% endif %}">
+                <h2 class="section__heading">{{ props.title }}</h2>
           <h4 class="section__heading">{{ props.titleSummary }}</h4>
           <div class="about__bio">{{ props.summary | safe }}</div>
           {% if props.buttonText.length and props.buttonPath.length %}
@@ -69,6 +70,6 @@
     }
 
     .about__divider .shape-fill {
-      fill: #569A9F;
+      fill: #386367;
     }
   </style>

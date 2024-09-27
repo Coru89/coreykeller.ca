@@ -41,6 +41,29 @@
 
     &__summary {
         line-height: 1.65;
+        margin-bottom: 3rem;
+        color: var(color--text);
+    }
+
+    &__links {
+        display: inline-flex;
+        flex-direction: column;
+
+        svg {
+            // fill: var(--color-blue);
+            stroke: var(--color-blue);
+        }
+        
+        a {
+            margin-bottom: 2rem;
+            width: max-content;
+        }
+
+        .button__arrow-link {
+            svg {
+                display: none;
+            }
+        }
     }
 
     &__leaf {

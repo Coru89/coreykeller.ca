@@ -5,6 +5,8 @@
   // padding: calc(2rem + 120px) 0;
   padding: calc(2rem + 120px) 0 0;
   justify-content: center;
+  overflow: hidden;
+  
 
   @include media-query(lg) {
     // padding: calc(1rem + 120px) 0;
@@ -12,13 +14,13 @@
   }
 
   &__inner {
-    @include panel-container;
+    @include panel-container-small;
     padding: 0;
     margin: 0 1.5rem;
     //text-align: center;
 
     @include media-query(lg) {
-      //align-items: center;
+      padding: 4rem 0 5rem 0;
       display: flex;
       flex-direction: column;
     }
@@ -26,6 +28,11 @@
   }
 
   &__row {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
     &:last-of-type {
       @include media-query(lg) {
         display: flex;
@@ -35,29 +42,76 @@
   }
 
   &__image {
-    padding-bottom: 2rem;
-    max-width: 300px;
-    margin: 0 auto;
+    margin-bottom: 3rem;
+    max-width: 250px;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+
+    // &:hover {
+    //   .about__image-bg2 {
+    //     animation: spin 8s linear infinite;
+    //   }
+    // }
+
+
 
     @include media-query(lg) {
-      padding-bottom: 0;
+      margin-bottom: 2rem;
       width: 30%;
     }
     
     &--reverse {
       order: 2;
     }
-    
-    // img {
-    //   width: 100%;
-    // }
+
+    &-bg {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: var(--color-green-lighter);
+      border-radius: 50%;
+      z-index: -1;
+
+      // &:hover + .about__image-bg2 {
+      //     animation: spin 8s linear infinite;
+        
+      // }
+    }
+
+    &-bg2 {
+      animation: spin 8s linear infinite;
+      top: -60px;
+      bottom: 0;
+      left: -60px;
+      // background-color: var(--color-green-dark);
+      background-color: transparent;
+      border: dashed 2px var(--color-green-dark);
+      z-index: -2;
+
+
+      
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
   }
 
   &__text {
     padding: 0 0 1.5rem 0;
-    text-align: left;
+    text-align: center;
 
     @include media-query(lg) {
+      text-align: left;
       padding: 0 1.5rem 1.5rem 3.5rem;
       width: 70%;
     }
@@ -77,6 +131,7 @@
     &-summary {
       line-height: 1.65;
       padding-bottom: 2.5rem;
+
     }
   }
 
@@ -86,5 +141,6 @@
 
   &__bio {
     margin-bottom: 2.5rem;
+    color: var(--color-text);
   }
 }

@@ -14,9 +14,14 @@
                 <p class="contact-panel__summary">
                     {{ props.summary }}
                 </p>
+                <div class="contact-panel__links">
+                {{ arrow_link("Send me an email", "mailto:corey.james.keller@gmail.com") }}
+                {{ external_link("Hire me on Upwork", "https://www.upwork.com/freelancers/~0157bef8ee3a01b3d2") }}
+                </div>
+
             </div>
 
-            <div class="contact-panel__column">
+            <div data-sal="slide-left" data-sal-delay="400" class="contact-panel__column">
                 {{ component('contact_form') }}
             </div>
         </div>

@@ -19,6 +19,16 @@
 }
 
 @font-face {
+  font-family: 'Europa';
+  src: local('Europa Light'), local('Europa-Light'),
+      url('fonts/Europa-Light.woff2') format('woff2'),
+      url('fonts/Europa-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Eurostile';
   src: local('Eurostile'), local('EurostileRegular'),
       url('fonts/EurostileRegular.woff2') format('woff2'),

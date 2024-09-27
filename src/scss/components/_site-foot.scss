@@ -1,11 +1,14 @@
 .site-foot {
   // Reverse whatever the theme colors are
-  background-color: var(--color-pink-light);
+  background-color: var(--color-green-dark);
   // border-top: 1px solid var(--color-stroke);
-  color: var(--color-text);
+  color: var(--color-white);
   padding: .75rem 0;
   line-height: auto;
 
+  // svg path {
+  //   fill: #fff;
+  // }
   // @include media-query(md) {
   //   padding: 9rem 0 0 0;
   // }

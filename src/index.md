@@ -1,5 +1,5 @@
 ---
-title: Corey Keller - Frontend Developer
+title: Corey Keller - Web Developer / Designer
 permalink: index.html
 postsHeading: Insights
 archiveButtonText: See all insights
@@ -7,20 +7,21 @@ portfolioHeading: Recent Projects
 servicesHeading: Expertise
 heroHeading: 'Hello, my name is'
 heroHeading2: 'Corey! '
-heroHeading3: A Frontend Developer ready to bring your next big idea to life.
+heroHeading3: >-
+  I specialize in building user-friendly, fully responsive, and
+  performance-optimized websites.
 heroHeading4: null
 heroImage: null
 page_sections:
-  - title: About
-    titleSecondary: Meet Corey
-    titleSummary: I build fast and user-friendly websites.
-    summary: >
-      <p>I specialise in making the web user-friendly. I am experienced building
-      with WordPress, Craft CMS and Shopify. My strong communication skills and
-      thorough approach stem from my background as a Business Analyst. Web
-      development has always been a passion of mine, driven by the creative
-      challenges and problem-solving it offers.</p>
-    imageURL: /images/corey-cicle.png
+  - title: "Nice to meet you. \U0001F44B"
+    titleSecondary: "Nice to meet you. \U0001F44B"
+    titleSummary: ''
+    summary: >-
+      Since I began my journey as a front-end web developer 10 years ago, I’ve
+      worked remotely for agencies, consulted for enterprises and small
+      businesses alike, and collaborated with talented individuals to create
+      user-friendly websites that help businesses thrive.
+    imageURL: /images/corey-photo-circle-nobg.png
     imagePosition: left
     imageAlt: Corey Keller
     buttonText: null
@@ -50,7 +51,7 @@ page_sections:
         label: Craft CMS
     template: skills
   - title: Work
-    titleSecondary: Recent Projects
+    titleSecondary: "Recent Projects \U0001F4BB"
     items:
       - title: Waterloo Innovation Park
         summary: >-
@@ -59,8 +60,12 @@ page_sections:
           which allows communication of important happenings to tenants.
           Additionally, I implemented art gallery display functionality complete
           with a lightbox feature and dynamic loading.
-        buttonText: Visit the site
-        buttonPath: 'https://www.waterlooinnovationpark.com'
+        buttonText: ''
+        buttonPath: ''
+        linkText: Visit the site
+        linkPath: 'https://www.waterlooinnovationpark.com'
+        tags:
+          - label: Craft CMS
         imageURL: /images/wip-desktop.png
       - title: California Ink
         summary: >
@@ -68,8 +73,12 @@ page_sections:
           Wordpress' Full Site Editing features. A custom and modern approach
           was taken to build a gutenberg block theme including a mix of core and
           custom blocks.
-        buttonText: Visit the site
-        buttonPath: 'https://cali-ink.com'
+        buttonText: ''
+        buttonPath: ''
+        linkText: Visit the site
+        linkPath: 'https://cali-ink.com'
+        tags:
+          - label: Wordpress
         imageURL: /images/cali-ink-mock-desktop.png
       - title: Vanmade Gear
         summary: >-
@@ -77,34 +86,42 @@ page_sections:
           existing eCommerce site on Shopify. The objective was to scale an
           already successful business through driving sales, increasing taffic
           and growing brand awareness.
-        buttonText: Read More
-        buttonPath: /portfolio/vanmadegear
+        buttonText: ''
+        buttonPath: ''
+        linkText: ''
+        tags:
+          - label: Shopify
         imageURL: /images/vmg-home-full.png
         imageAlt: Vanmade Gear
         imagePosition: right
         backgroundColor: EE964B
-        isBottom: false
       - title: Colonia Treuhand
         summary: >-
           This project was a Craft CMS multi-lingual site build for a Real
           Estate Investment company based in Toronto. This a fully bespoke and
           responsive site.
-        buttonText: Visit the site
-        buttonPath: 'https://coloniatreuhand.com'
+        buttonText: ''
+        buttonPath: ''
+        linkText: Visit the site
+        linkPath: 'https://coloniatreuhand.com'
+        tags:
+          - label: Craft CMS
         imageURL: /images/ctam-home-full.png
         imageAlt: Colonia Treuhand
         imagePosition: left
         backgroundColor: AA6373
-        isBottom: true
     template: featured_work
   - title: Give me a shout!
-    titleSecondary: Contact
+    titleSecondary: "Contact \U0001F4AC"
     summary: >-
       Have a question? Need a new site or a refresh? Work with me to create a
       modern website that will strengthen your brand, credibility,
       professionalism and serve as a hub of your online prescense.
     template: contact
-metaDesc: Update me later
+metaDesc: >-
+  Corey Keller is a Freelance Web Developer that specialize in building
+  user-friendly, fully responsive, and performance-optimized websites on Craft
+  CMS, Wordpress and Shopify.
 socialImage: ''
 layout: home
 ---
