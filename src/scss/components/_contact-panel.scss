@@ -41,13 +41,23 @@
 
     &__summary {
         line-height: 1.65;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         color: var(color--text);
+
+        @include media-query(lg) {
+            margin-bottom: 3rem;
+        }
     }
 
     &__links {
         display: inline-flex;
-        flex-direction: column;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+
+
+        @include media-query(lg) {
+            flex-direction: column;
+        }
 
         svg {
             // fill: var(--color-blue);
@@ -56,6 +66,7 @@
         
         a {
             margin-bottom: 2rem;
+            margin-right: 2rem;
             width: max-content;
         }
 
@@ -63,6 +74,15 @@
             svg {
                 display: none;
             }
+        }
+    }
+
+    .button[type=submit] {
+        display: block;
+        margin: auto;
+
+        @include media-query(md) {
+            display: inline-block;
         }
     }
 

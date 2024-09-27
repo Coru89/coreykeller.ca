@@ -23,7 +23,11 @@
 
   &__inner {
     @include panel-container;
-    padding: 3rem 1.5rem;
+
+    @include media-query(lg) {
+      padding: 3rem 1.5rem;
+    }
+
   }
 
   &__items {
@@ -58,8 +62,12 @@
     text-transform: uppercase;
 
     &-wrapper {
-      margin-bottom: 8rem;
+      margin-bottom: 3rem;
       text-align: center;
+
+      @include media-query(lg) {
+        margin-bottom: 8rem;
+      }
     }
   }
 

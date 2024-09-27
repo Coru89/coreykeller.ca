@@ -2,7 +2,7 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   // font-size: get-font-size(500);
-  background-color: var(--color-action-bg);
+  background-color: transparent;
   border-radius: 24px;
   border: 0;
   color: var(--color-action-text);
@@ -206,7 +206,7 @@
 
 
 .button--arrow {
-  background-color: var(--color-theme-primary);
+  // background-color: var(--color-theme-primary);
   color: var(--color-white);
   // font-size: get-font-size(600);
   //text-transform: uppercase;

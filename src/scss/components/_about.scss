@@ -83,13 +83,18 @@
 
     &-bg2 {
       animation: spin 8s linear infinite;
-      top: -60px;
+      top: -35px;
       bottom: 0;
-      left: -60px;
+      left: -35px;
       // background-color: var(--color-green-dark);
       background-color: transparent;
       border: dashed 2px var(--color-green-dark);
       z-index: -2;
+
+      @include media-query(lg) {
+        top: -60px;
+        left: -60px;
+      }
 
 
       
