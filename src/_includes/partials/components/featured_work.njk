@@ -20,7 +20,7 @@
     <div class="work-panel__row work-panel__items">
       {% for item in props.items %} 
         <div class="work-panel__item">
-          <h3 class="work-panel__text-title work-panel__text-title--mobile">{{ item.title }}</h3>
+          {# <h3 class="work-panel__text-title work-panel__text-title--mobile">{{ item.title }}</h3> #}
 
 
           <div data-sal="slide-up" data-sal-delay="200" class="work-panel__image{% if item.imagePosition === 'right' %} work-panel__image--reverse{% endif %}">

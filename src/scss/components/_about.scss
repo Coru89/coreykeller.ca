@@ -3,7 +3,7 @@
   position: relative;
   display: flex;
   // padding: calc(2rem + 120px) 0;
-  padding: calc(2rem + 120px) 0 0;
+  padding: calc(4rem + 40px) 0 0;
   justify-content: center;
   overflow: hidden;
   
@@ -27,6 +27,31 @@
   
   }
 
+  &__divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 40px;
+
+
+      @include media-query(md) {
+        height: 80px;
+      }
+    }
+
+    .shape-fill {
+      fill: #386367;
+    }
+  }
+
   &__row {
     align-items: center;
     display: flex;
@@ -43,10 +68,14 @@
 
   &__image {
     margin-bottom: 3rem;
-    max-width: 250px;
+    max-width: 190px;
     position: relative;
     z-index: 1;
     overflow: visible;
+
+    @include media-query(lg) {
+      max-width: 250px;
+    }
 
     // &:hover {
     //   .about__image-bg2 {
@@ -134,7 +163,7 @@
     }
 
     &-summary {
-      line-height: 1.65;
+      // line-height: 1.65;
       padding-bottom: 2.5rem;
 
     }
@@ -147,5 +176,10 @@
   &__bio {
     margin-bottom: 2.5rem;
     color: var(--color-text);
+    max-width: 750px;
+
+    @include media-query(lg) {
+      max-width: 100%;
+    }
   }
 }

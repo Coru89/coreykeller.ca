@@ -43,6 +43,10 @@ body {
   line-height: 1.5;
   min-height: 100vh;
   scroll-behavior: smooth;
+
+  // @include media-query(lg) {
+  //   line-height: 1.65;
+  // }
 }
 
 ol[class],ul[class] {

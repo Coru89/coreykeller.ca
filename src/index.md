@@ -5,8 +5,8 @@ postsHeading: Insights
 archiveButtonText: See all insights
 portfolioHeading: Recent Projects
 servicesHeading: Expertise
-heroHeading: 'Hello, my name is'
-heroHeading2: 'Corey! '
+heroHeading: 'Web Developer,'
+heroHeading2: 'UX Expert & Problem Solver'
 heroHeading3: >-
   I specialize in building user-friendly, fully responsive, and
   performance-optimized websites.
